@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Men's Shoes — SHESTYLE</title>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style1.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Announcement bar -->
+<div class="announce-bar">Free shipping on orders over $59!</div>
+<!-- Header -->
+<header class="site-header">
+<div class="container-page">
+<div class="navbar-top">
+<button aria-controls="sideMenu" aria-label="Open menu" class="icon-btn menu-btn" data-bs-target="#sideMenu" data-bs-toggle="offcanvas" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+<a class="brand-logo" href="index.html">SHESTYLE</a>
+<div class="header-icons">
+<button aria-label="Search" class="icon-btn" id="searchToggle" type="button">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<a aria-label="Wishlist" class="icon-btn" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+<a aria-label="Cart" class="icon-btn" href="cart.html">
+<i class="fa-solid fa-bag-shopping"></i>
+<span class="cart-count">0</span>
+</a>
+</div>
+</div>
+<input class="search-box search-box-full d-none" id="searchInput" placeholder="Search products..." type="search"/>
+<nav class="tab-nav">
+<ul class="tab-nav-list">
+<li><a class="tab-link" href="index.html">Home</a></li>
+<li><a class="tab-link" href="women.html">Women</a></li>
+<li><a class="tab-link" href="products.html?category=men">Men</a></li>
+<li><a class="tab-link" href="products.html?category=kids">Kids</a></li>
+<li><a class="tab-link" href="accessories.html">Accessories</a></li>
+<li><a class="tab-link text-rose" href="sale.html">Sale</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Side menu (offcanvas) -->
+<div aria-labelledby="sideMenuLabel" class="offcanvas offcanvas-start side-menu" id="sideMenu" tabindex="-1">
+<div class="offcanvas-header">
+<span class="brand-logo" id="sideMenuLabel">SHESTYLE</span>
+<button aria-label="Close" class="btn-close-custom" data-bs-dismiss="offcanvas" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="offcanvas-body p-0">
+<ul class="sidemenu-cat-list list-unstyled m-0">
+<li><a href="just-for-you.html">Just For You</a></li>
+<li><a class="text-rose" href="sale.html">Sale</a></li>
+<li><a class="current" href="shoes.html">Shoes</a></li>
+<li><a href="jewelry-accessories.html">Jewelry &amp; Accessories</a></li>
+<li><a href="beauty-health.html">Beauty &amp; Health</a></li>
+<li><a href="office-school-supplies.html">Office &amp; School Supplies</a></li>
+<li><a href="baby-maternity.html">Baby &amp; Maternity</a></li>
+<li><a href="bags-luggage.html">Bags &amp; Luggage</a></li>
+</ul>
+<div class="sidemenu-divider"></div>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-dollar-sign"></i>Change Currency</span>
+<span class="sidemenu-row-value">USD</span>
+</a>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-globe"></i>Change Language</span>
+<span class="sidemenu-row-value">English</span>
+</a>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-accordion">
+<button aria-controls="shestyleInfo" aria-expanded="true" class="sidemenu-accordion-toggle" data-bs-target="#shestyleInfo" data-bs-toggle="collapse" type="button">
+        SHESTYLE Info <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="collapse show" id="shestyleInfo">
+<ul class="list-unstyled sidemenu-info-list m-0">
+<li><a href="#">Shipping Info</a></li>
+<li><a href="#">Return Policy</a></li>
+<li><a href="#">How to Pay</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Social Responsibility</a></li>
+<li><a href="#">Privacy Center</a></li>
+<li><a href="#">Manage Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-download">
+<h6>Download App</h6>
+<a class="download-badge" href="#"><i class="fa-brands fa-google-play"></i> Get it on Google Play</a>
+</div>
+</div>
+<div class="sidemenu-bottom-nav">
+<a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a href="wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+<a href="#"><i class="fa-solid fa-headset"></i><span>Support</span></a>
+<a href="login.html"><i class="fa-regular fa-user"></i><span>Account</span></a>
+</div>
+</div>
+<!-- Page banner -->
+<div class="page-banner">
+<div class="container-page">
+<nav class="breadcrumb-min mb-2"><a href="index.html">Home</a> / <span>Men's Shoes</span></nav>
+<h1>Men's Shoes</h1>
+</div>
+</div>
+<!-- Product grid -->
+<section class="py-4">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-001-classic-low-sneakers" data-price="34.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-001-classic-low-sneakers"><img alt="Classic Low Sneakers" src="images/classic-low-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-001-classic-low-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-001-classic-low-sneakers"><div class="product-name">Classic Low Sneakers</div></a>
+<div class="product-price">$34.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-002-tan-leather-sneakers" data-price="29.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-002-tan-leather-sneakers"><img alt="Tan Leather Sneakers" src="images/tan-leather-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-002-tan-leather-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-002-tan-leather-sneakers"><div class="product-name">Tan Leather Sneakers</div></a>
+<div class="product-price">$29.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-003-navy-canvas-sneakers" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-003-navy-canvas-sneakers"><img alt="Navy Canvas Sneakers" src="images/navy-canvas-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-003-navy-canvas-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-003-navy-canvas-sneakers"><div class="product-name">Navy Canvas Sneakers</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-004-suede-derby-shoes" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-004-suede-derby-shoes"><img alt="Suede Derby Shoes" src="images/suede-derby-shoes.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-004-suede-derby-shoes">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-004-suede-derby-shoes"><div class="product-name">Suede Derby Shoes</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-005-suede-high-top-sneakers" data-price="26.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-005-suede-high-top-sneakers"><img alt="Suede High-Top Sneakers" src="images/suede-hightop-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-005-suede-high-top-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-005-suede-high-top-sneakers"><div class="product-name">Suede High-Top Sneakers</div></a>
+<div class="product-price">$26.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-006-brown-canvas-sneakers" data-price="25.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-006-brown-canvas-sneakers"><img alt="Brown Canvas Sneakers" src="images/brown-canvas-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-006-brown-canvas-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-006-brown-canvas-sneakers"><div class="product-name">Brown Canvas Sneakers</div></a>
+<div class="product-price">$25.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-007-brown-leather-sneakers" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-007-brown-leather-sneakers"><img alt="Brown Leather Sneakers" src="images/brown-leather-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-007-brown-leather-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-007-brown-leather-sneakers"><div class="product-name">Brown Leather Sneakers</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-008-navy-buckle-loafers" data-price="32.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-008-navy-buckle-loafers"><img alt="Navy Buckle Loafers" src="images/navy-buckle-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-008-navy-buckle-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-008-navy-buckle-loafers"><div class="product-name">Navy Buckle Loafers</div></a>
+<div class="product-price">$32.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-009-brown-court-sneakers" data-price="29.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-009-brown-court-sneakers"><img alt="Brown Court Sneakers" src="images/brown-court-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-009-brown-court-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-009-brown-court-sneakers"><div class="product-name">Brown Court Sneakers</div></a>
+<div class="product-price">$29.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-010-black-canvas-sneakers" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-010-black-canvas-sneakers"><img alt="Black Canvas Sneakers" src="images/black-canvas-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-010-black-canvas-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-010-black-canvas-sneakers"><div class="product-name">Black Canvas Sneakers</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-011-white-platform-sneakers" data-price="25.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-011-white-platform-sneakers"><img alt="White Platform Sneakers" src="images/white-platform-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-011-white-platform-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-011-white-platform-sneakers"><div class="product-name">White Platform Sneakers</div></a>
+<div class="product-price">$25.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-012-taupe-canvas-sneakers" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-012-taupe-canvas-sneakers"><img alt="Taupe Canvas Sneakers" src="images/taupe-canvas-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-012-taupe-canvas-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-012-taupe-canvas-sneakers"><div class="product-name">Taupe Canvas Sneakers</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-013-lace-up-high-top-boots" data-price="28.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-013-lace-up-high-top-boots"><img alt="Lace-Up High-Top Boots" src="images/laceup-hightop-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-013-lace-up-high-top-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-013-lace-up-high-top-boots"><div class="product-name">Lace-Up High-Top Boots</div></a>
+<div class="product-price">$28.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-014-two-tone-derby-sneakers" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-014-two-tone-derby-sneakers"><img alt="Two-Tone Derby Sneakers" src="images/twotone-derby-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-014-two-tone-derby-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-014-two-tone-derby-sneakers"><div class="product-name">Two-Tone Derby Sneakers</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-015-black-mesh-sneakers" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-015-black-mesh-sneakers"><img alt="Black Mesh Sneakers" src="images/black-mesh-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-015-black-mesh-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-015-black-mesh-sneakers"><div class="product-name">Black Mesh Sneakers</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-men" data-id="legacy-shoes-men-016-classic-court-sneakers" data-price="33.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-men-016-classic-court-sneakers"><img alt="Classic Court Sneakers" src="images/classic-court-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-men-016-classic-court-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-men-016-classic-court-sneakers"><div class="product-name">Classic Court Sneakers</div></a>
+<div class="product-price">$33.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<h5>SHESTYLE</h5>
+<p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+</div>
+<div class="col-6 col-md-3">
+<h5>SHOP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="women.html">Women</a></li>
+<li class="mb-2"><a href="products.html?category=men">Men</a></li>
+<li class="mb-2"><a href="products.html?category=kids">Kids</a></li>
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>HELP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="#">Shipping &amp; Returns</a></li>
+<li class="mb-2"><a href="#">Track Order</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>NEWSLETTER</h5>
+<p class="small">Sign up for style tips and early access to sales.</p>
+<div class="d-flex gap-2">
+<input class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;" type="email"/>
+<button class="btn btn-sm btn-light">Join</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script><script src="products-data-extra.js"></script><script src="legacy-products.js"></script><script src="wishlist.js"></script><script src="cart-store.js"></script><script src="catalog.js"></script><script src="static-interactions.js"></script><script src="script1.js"></script>
+</body>
+</html>

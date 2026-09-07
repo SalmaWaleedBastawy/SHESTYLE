@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Women's Shoes — SHESTYLE</title>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style1.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Announcement bar -->
+<div class="announce-bar">Free shipping on orders over $59!</div>
+<!-- Header -->
+<header class="site-header">
+<div class="container-page">
+<div class="navbar-top">
+<button aria-controls="sideMenu" aria-label="Open menu" class="icon-btn menu-btn" data-bs-target="#sideMenu" data-bs-toggle="offcanvas" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+<a class="brand-logo" href="index.html">SHESTYLE</a>
+<div class="header-icons">
+<button aria-label="Search" class="icon-btn" id="searchToggle" type="button">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<a aria-label="Wishlist" class="icon-btn" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+<a aria-label="Cart" class="icon-btn" href="cart.html">
+<i class="fa-solid fa-bag-shopping"></i>
+<span class="cart-count">0</span>
+</a>
+</div>
+</div>
+<input class="search-box search-box-full d-none" id="searchInput" placeholder="Search products..." type="search"/>
+<nav class="tab-nav">
+<ul class="tab-nav-list">
+<li><a class="tab-link" href="index.html">Home</a></li>
+<li><a class="tab-link" href="women.html">Women</a></li>
+<li><a class="tab-link" href="products.html?category=men">Men</a></li>
+<li><a class="tab-link" href="products.html?category=kids">Kids</a></li>
+<li><a class="tab-link" href="accessories.html">Accessories</a></li>
+<li><a class="tab-link text-rose" href="sale.html">Sale</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Side menu (offcanvas) -->
+<div aria-labelledby="sideMenuLabel" class="offcanvas offcanvas-start side-menu" id="sideMenu" tabindex="-1">
+<div class="offcanvas-header">
+<span class="brand-logo" id="sideMenuLabel">SHESTYLE</span>
+<button aria-label="Close" class="btn-close-custom" data-bs-dismiss="offcanvas" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="offcanvas-body p-0">
+<ul class="sidemenu-cat-list list-unstyled m-0">
+<li><a href="just-for-you.html">Just For You</a></li>
+<li><a class="text-rose" href="sale.html">Sale</a></li>
+<li><a class="current" href="shoes.html">Shoes</a></li>
+<li><a href="jewelry-accessories.html">Jewelry &amp; Accessories</a></li>
+<li><a href="beauty-health.html">Beauty &amp; Health</a></li>
+<li><a href="office-school-supplies.html">Office &amp; School Supplies</a></li>
+<li><a href="baby-maternity.html">Baby &amp; Maternity</a></li>
+<li><a href="bags-luggage.html">Bags &amp; Luggage</a></li>
+</ul>
+<div class="sidemenu-divider"></div>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-dollar-sign"></i>Change Currency</span>
+<span class="sidemenu-row-value">USD</span>
+</a>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-globe"></i>Change Language</span>
+<span class="sidemenu-row-value">English</span>
+</a>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-accordion">
+<button aria-controls="shestyleInfo" aria-expanded="true" class="sidemenu-accordion-toggle" data-bs-target="#shestyleInfo" data-bs-toggle="collapse" type="button">
+        SHESTYLE Info <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="collapse show" id="shestyleInfo">
+<ul class="list-unstyled sidemenu-info-list m-0">
+<li><a href="#">Shipping Info</a></li>
+<li><a href="#">Return Policy</a></li>
+<li><a href="#">How to Pay</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Social Responsibility</a></li>
+<li><a href="#">Privacy Center</a></li>
+<li><a href="#">Manage Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-download">
+<h6>Download App</h6>
+<a class="download-badge" href="#"><i class="fa-brands fa-google-play"></i> Get it on Google Play</a>
+</div>
+</div>
+<div class="sidemenu-bottom-nav">
+<a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a href="wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+<a href="#"><i class="fa-solid fa-headset"></i><span>Support</span></a>
+<a href="login.html"><i class="fa-regular fa-user"></i><span>Account</span></a>
+</div>
+</div>
+<!-- Page banner -->
+<div class="page-banner">
+<div class="container-page">
+<nav class="breadcrumb-min mb-2"><a href="index.html">Home</a> / <span>Women's Shoes</span></nav>
+<h1>Women's Shoes</h1>
+</div>
+</div>
+<!-- Product grid -->
+<section class="py-4">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-001-buckle-ankle-boots" data-price="32.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-001-buckle-ankle-boots"><img alt="Buckle Ankle Boots" src="images/buckle-ankle-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-001-buckle-ankle-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-001-buckle-ankle-boots"><div class="product-name">Buckle Ankle Boots</div></a>
+<div class="product-price">$32.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-002-buckle-combat-boots" data-price="34.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-002-buckle-combat-boots"><img alt="Buckle Combat Boots" src="images/buckle-combat-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-002-buckle-combat-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-002-buckle-combat-boots"><div class="product-name">Buckle Combat Boots</div></a>
+<div class="product-price">$34.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-003-block-heel-sandals" data-price="29.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-003-block-heel-sandals"><img alt="Block Heel Sandals" src="images/block-heel-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-003-block-heel-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-003-block-heel-sandals"><div class="product-name">Block Heel Sandals</div></a>
+<div class="product-price">$29.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-004-strappy-platform-sandals" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-004-strappy-platform-sandals"><img alt="Strappy Platform Sandals" src="images/strappy-platform-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-004-strappy-platform-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-004-strappy-platform-sandals"><div class="product-name">Strappy Platform Sandals</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-005-cross-strap-slides" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-005-cross-strap-slides"><img alt="Cross Strap Slides" src="images/cross-strap-slides.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-005-cross-strap-slides">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-005-cross-strap-slides"><div class="product-name">Cross Strap Slides</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-006-ankle-strap-heels" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-006-ankle-strap-heels"><img alt="Ankle Strap Heels" src="images/ankle-strap-heels.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-006-ankle-strap-heels">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-006-ankle-strap-heels"><div class="product-name">Ankle Strap Heels</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-007-suede-zip-ankle-boots" data-price="33.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-007-suede-zip-ankle-boots"><img alt="Suede Zip Ankle Boots" src="images/suede-zip-ankle-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-007-suede-zip-ankle-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-007-suede-zip-ankle-boots"><div class="product-name">Suede Zip Ankle Boots</div></a>
+<div class="product-price">$33.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-008-two-tone-slide-sandals" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-008-two-tone-slide-sandals"><img alt="Two-Tone Slide Sandals" src="images/two-tone-slide-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-008-two-tone-slide-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-008-two-tone-slide-sandals"><div class="product-name">Two-Tone Slide Sandals</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-009-rhinestone-ankle-boots" data-price="31.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-009-rhinestone-ankle-boots"><img alt="Rhinestone Ankle Boots" src="images/rhinestone-ankle-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-009-rhinestone-ankle-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-009-rhinestone-ankle-boots"><div class="product-name">Rhinestone Ankle Boots</div></a>
+<div class="product-price">$31.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-010-bow-slide-sandals" data-price="18.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-010-bow-slide-sandals"><img alt="Bow Slide Sandals" src="images/bow-slide-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-010-bow-slide-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-010-bow-slide-sandals"><div class="product-name">Bow Slide Sandals</div></a>
+<div class="product-price">$18.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-011-gold-tip-bow-flats" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-011-gold-tip-bow-flats"><img alt="Gold Tip Bow Flats" src="images/gold-tip-bow-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-011-gold-tip-bow-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-011-gold-tip-bow-flats"><div class="product-name">Gold Tip Bow Flats</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-012-bow-ballet-flats" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-012-bow-ballet-flats"><img alt="Bow Ballet Flats" src="images/bow-ballet-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-012-bow-ballet-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-012-bow-ballet-flats"><div class="product-name">Bow Ballet Flats</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-013-black-strappy-sandals" data-price="28.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-013-black-strappy-sandals"><img alt="Black Strappy Sandals" src="images/black-strappy-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-013-black-strappy-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-013-black-strappy-sandals"><div class="product-name">Black Strappy Sandals</div></a>
+<div class="product-price">$28.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-014-flip-flop-sandals" data-price="14.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-014-flip-flop-sandals"><img alt="Flip Flop Sandals" src="images/flip-flop-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-014-flip-flop-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-014-flip-flop-sandals"><div class="product-name">Flip Flop Sandals</div></a>
+<div class="product-price">$14.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-015-pointed-toe-flats" data-price="26.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-015-pointed-toe-flats"><img alt="Pointed Toe Flats" src="images/pointed-toe-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-015-pointed-toe-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-015-pointed-toe-flats"><div class="product-name">Pointed Toe Flats</div></a>
+<div class="product-price">$26.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-016-buckle-loafers" data-price="28.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-016-buckle-loafers"><img alt="Buckle Loafers" src="images/buckle-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-016-buckle-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-016-buckle-loafers"><div class="product-name">Buckle Loafers</div></a>
+<div class="product-price">$28.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-017-triangle-buckle-boots" data-price="32.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-017-triangle-buckle-boots"><img alt="Triangle Buckle Boots" src="images/triangle-buckle-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-017-triangle-buckle-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-017-triangle-buckle-boots"><div class="product-name">Triangle Buckle Boots</div></a>
+<div class="product-price">$32.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-018-platform-mary-janes" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-018-platform-mary-janes"><img alt="Platform Mary Janes" src="images/platform-maryjanes.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-018-platform-mary-janes">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-018-platform-mary-janes"><div class="product-name">Platform Mary Janes</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-019-lace-up-wedge-boots" data-price="31.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-019-lace-up-wedge-boots"><img alt="Lace-Up Wedge Boots" src="images/laceup-wedge-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-019-lace-up-wedge-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-019-lace-up-wedge-boots"><div class="product-name">Lace-Up Wedge Boots</div></a>
+<div class="product-price">$31.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-020-chunky-platform-sneakers" data-price="26.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-020-chunky-platform-sneakers"><img alt="Chunky Platform Sneakers" src="images/chunky-platform-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-020-chunky-platform-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-020-chunky-platform-sneakers"><div class="product-name">Chunky Platform Sneakers</div></a>
+<div class="product-price">$26.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-021-cream-penny-loafers" data-price="25.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-021-cream-penny-loafers"><img alt="Cream Penny Loafers" src="images/cream-penny-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-021-cream-penny-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-021-cream-penny-loafers"><div class="product-name">Cream Penny Loafers</div></a>
+<div class="product-price">$25.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-022-chain-platform-loafers" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-022-chain-platform-loafers"><img alt="Chain Platform Loafers" src="images/chain-platform-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-022-chain-platform-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-022-chain-platform-loafers"><div class="product-name">Chain Platform Loafers</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-023-chunky-dad-sneakers" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-023-chunky-dad-sneakers"><img alt="Chunky Dad Sneakers" src="images/chunky-dad-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-023-chunky-dad-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-023-chunky-dad-sneakers"><div class="product-name">Chunky Dad Sneakers</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-024-black-chain-loafers" data-price="28.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-024-black-chain-loafers"><img alt="Black Chain Loafers" src="images/black-chain-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-024-black-chain-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-024-black-chain-loafers"><div class="product-name">Black Chain Loafers</div></a>
+<div class="product-price">$28.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-025-two-tone-trainers" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-025-two-tone-trainers"><img alt="Two-Tone Trainers" src="images/two-tone-trainers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-025-two-tone-trainers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-025-two-tone-trainers"><div class="product-name">Two-Tone Trainers</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-026-slip-on-sneakers" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-026-slip-on-sneakers"><img alt="Slip-On Sneakers" src="images/slipon-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-026-slip-on-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-026-slip-on-sneakers"><div class="product-name">Slip-On Sneakers</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-027-stripe-platform-sneakers" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-027-stripe-platform-sneakers"><img alt="Stripe Platform Sneakers" src="images/stripe-platform-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-027-stripe-platform-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-027-stripe-platform-sneakers"><div class="product-name">Stripe Platform Sneakers</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-028-pink-trim-court-sneakers" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-028-pink-trim-court-sneakers"><img alt="Pink Trim Court Sneakers" src="images/pink-trim-court-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-028-pink-trim-court-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-028-pink-trim-court-sneakers"><div class="product-name">Pink Trim Court Sneakers</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-women" data-id="legacy-shoes-women-029-chunky-sole-sneakers" data-price="31.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-women-029-chunky-sole-sneakers"><img alt="Chunky Sole Sneakers" src="images/chunky-sole-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-women-029-chunky-sole-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-women-029-chunky-sole-sneakers"><div class="product-name">Chunky Sole Sneakers</div></a>
+<div class="product-price">$31.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<h5>SHESTYLE</h5>
+<p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+</div>
+<div class="col-6 col-md-3">
+<h5>SHOP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="women.html">Women</a></li>
+<li class="mb-2"><a href="products.html?category=men">Men</a></li>
+<li class="mb-2"><a href="products.html?category=kids">Kids</a></li>
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>HELP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="#">Shipping &amp; Returns</a></li>
+<li class="mb-2"><a href="#">Track Order</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>NEWSLETTER</h5>
+<p class="small">Sign up for style tips and early access to sales.</p>
+<div class="d-flex gap-2">
+<input class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;" type="email"/>
+<button class="btn btn-sm btn-light">Join</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script><script src="products-data-extra.js"></script><script src="legacy-products.js"></script><script src="wishlist.js"></script><script src="cart-store.js"></script><script src="catalog.js"></script><script src="static-interactions.js"></script><script src="script1.js"></script>
+</body>
+</html>
