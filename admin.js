@@ -1103,108 +1103,105 @@ document.addEventListener('DOMContentLoaded', function () {
      Orders
      ========================================================== */
 
-  function renderOrders() {
+  function renderOrders(orders) {
 
-    if (!adminData) {
-      return;
-    }
+  var body =
+    document.getElementById('ordersBody');
 
-
-    var orders =
-      adminData.recentOrders || [];
+  var emptyEl =
+    document.getElementById('ordersEmpty');
 
 
-    var body =
-      document.getElementById('ordersBody');
-
-    var emptyEl =
-      document.getElementById('ordersEmpty');
+  if (!body) {
+    return;
+  }
 
 
-    if (!body) {
-      return;
-    }
+  orders = orders || [];
 
 
-    if (orders.length === 0) {
+  if (orders.length === 0) {
 
-      body.innerHTML = '';
-
-      if (emptyEl) {
-        emptyEl.style.display = 'block';
-      }
-
-      return;
-
-    }
-
+    body.innerHTML = '';
 
     if (emptyEl) {
-      emptyEl.style.display = 'none';
+      emptyEl.style.display = 'block';
     }
 
-
-    body.innerHTML =
-      orders.map(function (order) {
-
-        return (
-
-          '<tr>' +
-
-            '<td>' +
-              escapeHtml(
-                order.OrderNumber
-              ) +
-            '</td>' +
-
-            '<td>' +
-              escapeHtml(
-                order.FullName || '—'
-              ) +
-            '</td>' +
-
-            '<td>' +
-              escapeHtml(
-                order.Email || '—'
-              ) +
-            '</td>' +
-
-            '<td>—</td>' +
-
-            '<td>' +
-              formatMoney(
-                order.TotalAmount
-              ) +
-            '</td>' +
-
-            '<td>' +
-              formatDate(
-                order.OrderDate
-              ) +
-            '</td>' +
-
-            '<td>' +
-
-              '<span class="status-badge ' +
-              statusClass(order.Status) +
-              '">' +
-
-                escapeHtml(
-                  order.Status || 'Pending'
-                ) +
-
-              '</span>' +
-
-            '</td>' +
-
-          '</tr>'
-
-        );
-
-      }).join('');
+    return;
 
   }
 
+
+  if (emptyEl) {
+    emptyEl.style.display = 'none';
+  }
+
+
+  body.innerHTML =
+    orders.map(function (order) {
+
+      return (
+
+        '<tr>' +
+
+          '<td>' +
+            escapeHtml(
+              order.OrderNumber
+            ) +
+          '</td>' +
+
+          '<td>' +
+            escapeHtml(
+              order.FullName || '—'
+            ) +
+          '</td>' +
+
+          '<td>' +
+            escapeHtml(
+              order.Email || '—'
+            ) +
+          '</td>' +
+
+          '<td>' +
+            escapeHtml(
+              order.ItemsCount || '0'
+            ) +
+          '</td>' +
+
+          '<td>' +
+            formatMoney(
+              order.TotalAmount
+            ) +
+          '</td>' +
+
+          '<td>' +
+            formatDate(
+              order.OrderDate
+            ) +
+          '</td>' +
+
+          '<td>' +
+
+            '<span class="status-badge ' +
+            statusClass(order.Status) +
+            '">' +
+
+              escapeHtml(
+                order.Status || 'Pending'
+              ) +
+
+            '</span>' +
+
+          '</td>' +
+
+        '</tr>'
+
+      );
+
+    }).join('');
+
+}
 
   /* ==========================================================
    Users
@@ -1469,23 +1466,41 @@ function updateUserRole(userID, role) {
 
       adminData = result;
 
+renderDashboard();
 
-      renderDashboard();
+fetch('backend/admin-orders.php')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (ordersResult) {
 
-      renderOrders();
+    if (!ordersResult.ok) {
+      alert(ordersResult.error);
+      return;
+    }
 
+    renderOrders(ordersResult.orders || []);
 
-      loadCategories()
-        .then(function () {
+  })
+  .catch(function (error) {
 
-          return loadProducts();
+    console.log(
+      'Orders error:',
+      error
+    );
 
-        });
+  });
 
+loadCategories()
+  .then(function () {
 
-      loadUsers();
+    return loadProducts();
 
-    })
+  });
+
+loadUsers();
+
+})
 
     .catch(function (error) {
 

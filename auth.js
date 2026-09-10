@@ -69,7 +69,7 @@ if (loginForm) {
       return;
     }
 
-    fetch((window.location.pathname.includes('/SHEIN-Fixed/') ? '../login.php' : 'login.php'), {
+    fetch('backend/login.php', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -168,7 +168,7 @@ if (registerForm) {
             return;
         }
 
-        fetch((window.location.pathname.includes('/SHEIN-Fixed/') ? '../register.php' : 'register.php'), {
+        fetch('backend/register.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
