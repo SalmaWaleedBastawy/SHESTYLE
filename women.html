@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Women — SHESTYLE</title>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style1.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Announcement bar -->
+<div class="announce-bar">Free shipping on orders over $59!</div>
+<!-- Header -->
+<header class="site-header">
+<div class="container-page">
+<div class="navbar-top">
+<button aria-controls="sideMenu" aria-label="Open menu" class="icon-btn menu-btn" data-bs-target="#sideMenu" data-bs-toggle="offcanvas" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+<a class="brand-logo" href="index.html">SHESTYLE</a>
+<div class="header-icons">
+<button aria-label="Search" class="icon-btn" id="searchToggle" type="button">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<a aria-label="Wishlist" class="icon-btn" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+<a aria-label="Cart" class="icon-btn" href="cart.html">
+<i class="fa-solid fa-bag-shopping"></i>
+<span class="cart-count">0</span>
+</a>
+</div>
+</div>
+<input class="search-box search-box-full d-none" id="searchInput" placeholder="Search products..." type="search"/>
+<nav class="tab-nav">
+<ul class="tab-nav-list">
+<li><a class="tab-link" href="index.html">Home</a></li>
+<li><a class="tab-link active" href="women.html">Women</a></li>
+<li><a class="tab-link" href="men.html">Men</a></li>
+<li><a class="tab-link" href="kids.html">Kids</a></li>
+<li><a class="tab-link" href="accessories.html">Accessories</a></li>
+<li><a class="tab-link text-rose" href="sale.html">Sale</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Side menu (offcanvas) -->
+<div aria-labelledby="sideMenuLabel" class="offcanvas offcanvas-start side-menu" id="sideMenu" tabindex="-1">
+<div class="offcanvas-header">
+<span class="brand-logo" id="sideMenuLabel">SHESTYLE</span>
+<button aria-label="Close" class="btn-close-custom" data-bs-dismiss="offcanvas" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="offcanvas-body p-0">
+<ul class="sidemenu-cat-list list-unstyled m-0">
+<li><a href="just-for-you.html">Just For You</a></li>
+<li><a class="text-rose" href="sale.html">Sale</a></li>
+<li><a href="shoes.html">Shoes</a></li>
+<li><a href="jewelry-accessories.html">Jewelry &amp; Accessories</a></li>
+<li><a href="beauty-health.html">Beauty &amp; Health</a></li>
+<li><a href="office-school-supplies.html">Office &amp; School Supplies</a></li>
+<li><a href="baby-maternity.html">Baby &amp; Maternity</a></li>
+<li><a href="bags-luggage.html">Bags &amp; Luggage</a></li>
+</ul>
+<div class="sidemenu-divider"></div>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-dollar-sign"></i>Change Currency</span>
+<span class="sidemenu-row-value">USD</span>
+</a>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-globe"></i>Change Language</span>
+<span class="sidemenu-row-value">English</span>
+</a>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-accordion">
+<button aria-controls="shestyleInfo" aria-expanded="true" class="sidemenu-accordion-toggle" data-bs-target="#shestyleInfo" data-bs-toggle="collapse" type="button">
+        SHESTYLE Info <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="collapse show" id="shestyleInfo">
+<ul class="list-unstyled sidemenu-info-list m-0">
+<li><a href="#">Shipping Info</a></li>
+<li><a href="#">Return Policy</a></li>
+<li><a href="#">How to Pay</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Social Responsibility</a></li>
+<li><a href="#">Privacy Center</a></li>
+<li><a href="#">Manage Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-download">
+<h6>Download App</h6>
+<a class="download-badge" href="#"><i class="fa-brands fa-google-play"></i> Get it on Google Play</a>
+</div>
+</div>
+<div class="sidemenu-bottom-nav">
+<a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a href="wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+<a href="#"><i class="fa-solid fa-headset"></i><span>Support</span></a>
+<a href="login.html"><i class="fa-regular fa-user"></i><span>Account</span></a>
+</div>
+</div>
+<!-- Page banner -->
+<div class="page-banner">
+<div class="container-page">
+<nav class="breadcrumb-min mb-2"><a href="index.html">Home</a> / <span>Women</span></nav>
+<h1>Women</h1>
+<div class="d-flex flex-wrap gap-3 mt-2">
+<a class="text-rose small" href="#dresses">Dresses ↓</a>
+<a class="text-rose small" href="#pants">Pants ↓</a>
+<a class="text-rose small" href="#blouses">Blouses &amp; Co-ord Sets ↓</a>
+<a class="text-rose small" href="#suits-coats">Suits &amp; Coats ↓</a>
+<a class="text-rose small" href="#skirts">Skirts ↓</a>
+</div>
+</div>
+</div>
+<!-- Product grid -->
+<section class="py-4">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-001-silk-slip-dress" data-price="32.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-001-silk-slip-dress"><img alt="Silk Slip Dress" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-001-silk-slip-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-001-silk-slip-dress"><div class="product-name">Silk Slip Dress</div></a>
+<div class="product-price">$32.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-002-knit-cardigan" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-002-knit-cardigan"><img alt="Knit Cardigan" src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-002-knit-cardigan">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-002-knit-cardigan"><div class="product-name">Knit Cardigan</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-003-wide-leg-trousers" data-price="31.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-003-wide-leg-trousers"><img alt="Wide Leg Trousers" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-003-wide-leg-trousers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-003-wide-leg-trousers"><div class="product-name">Wide Leg Trousers</div></a>
+<div class="product-price">$31.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-004-floral-print-top" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-004-floral-print-top"><img alt="Floral Print Top" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-004-floral-print-top">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-004-floral-print-top"><div class="product-name">Floral Print Top</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-005-pleated-midi-skirt" data-price="28.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-005-pleated-midi-skirt"><img alt="Pleated Midi Skirt" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-005-pleated-midi-skirt">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-005-pleated-midi-skirt"><div class="product-name">Pleated Midi Skirt</div></a>
+<div class="product-price">$28.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-006-puff-sleeve-blouse" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-006-puff-sleeve-blouse"><img alt="Puff Sleeve Blouse" src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-006-puff-sleeve-blouse">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-006-puff-sleeve-blouse"><div class="product-name">Puff Sleeve Blouse</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-007-tailored-blazer" data-price="39.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-007-tailored-blazer"><img alt="Tailored Blazer" src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-007-tailored-blazer">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-007-tailored-blazer"><div class="product-name">Tailored Blazer</div></a>
+<div class="product-price">$39.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-008-straight-leg-jeans" data-price="34.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-008-straight-leg-jeans"><img alt="Straight Leg Jeans" src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&amp;w=500&amp;auto=format&amp;fit=crop"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-008-straight-leg-jeans">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-008-straight-leg-jeans"><div class="product-name">Straight Leg Jeans</div></a>
+<div class="product-price">$34.99</div>
+</div>
+</div>
+<!-- ===== New products added ===== -->
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-009-sky-blue-puff-sleeve-gown" data-price="64.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-009-sky-blue-puff-sleeve-gown"><img alt="Sky Blue Puff Sleeve Gown" src="assets/WhatsApp Image 2026-09-06 at 6.14.43 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-009-sky-blue-puff-sleeve-gown">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-009-sky-blue-puff-sleeve-gown"><div class="product-name">Sky Blue Puff Sleeve Gown</div></a>
+<div class="product-price">$64.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-010-floral-print-modest-dress" data-price="42.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-010-floral-print-modest-dress"><img alt="Floral Print Modest Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.44 AM (3).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-010-floral-print-modest-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-010-floral-print-modest-dress"><div class="product-name">Floral Print Modest Dress</div></a>
+<div class="product-price">$42.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-011-rose-print-evening-gown" data-price="79.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-011-rose-print-evening-gown"><img alt="Rose Print Evening Gown" src="assets/WhatsApp Image 2026-09-06 at 6.14.44 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-011-rose-print-evening-gown">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-011-rose-print-evening-gown"><div class="product-name">Rose Print Evening Gown</div></a>
+<div class="product-price">$79.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-012-beige-lace-evening-gown" data-price="74.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-012-beige-lace-evening-gown"><img alt="Beige Lace Evening Gown" src="assets/WhatsApp Image 2026-09-06 at 6.14.45 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-012-beige-lace-evening-gown">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-012-beige-lace-evening-gown"><div class="product-name">Beige Lace Evening Gown</div></a>
+<div class="product-price">$74.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-013-classic-open-abaya" data-price="45.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-013-classic-open-abaya"><img alt="Classic Open Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.45 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-013-classic-open-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-013-classic-open-abaya"><div class="product-name">Classic Open Abaya</div></a>
+<div class="product-price">$45.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-014-beige-wrap-abaya" data-price="48.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-014-beige-wrap-abaya"><img alt="Beige Wrap Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.46 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-014-beige-wrap-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-014-beige-wrap-abaya"><div class="product-name">Beige Wrap Abaya</div></a>
+<div class="product-price">$48.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-015-embroidered-cuff-abaya" data-price="52.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-015-embroidered-cuff-abaya"><img alt="Embroidered Cuff Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.46 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-015-embroidered-cuff-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-015-embroidered-cuff-abaya"><div class="product-name">Embroidered Cuff Abaya</div></a>
+<div class="product-price">$52.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-016-zip-front-abaya" data-price="46.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-016-zip-front-abaya"><img alt="Zip Front Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.46 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-016-zip-front-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-016-zip-front-abaya"><div class="product-name">Zip Front Abaya</div></a>
+<div class="product-price">$46.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-017-denim-panel-jacket-set" data-price="54.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-017-denim-panel-jacket-set"><img alt="Denim Panel Jacket Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.47 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-017-denim-panel-jacket-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-017-denim-panel-jacket-set"><div class="product-name">Denim Panel Jacket Set</div></a>
+<div class="product-price">$54.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-018-pleated-beige-abaya" data-price="49.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-018-pleated-beige-abaya"><img alt="Pleated Beige Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.47 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-018-pleated-beige-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-018-pleated-beige-abaya"><div class="product-name">Pleated Beige Abaya</div></a>
+<div class="product-price">$49.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-019-piped-trim-abaya" data-price="58.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-019-piped-trim-abaya"><img alt="Piped Trim Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.47 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-019-piped-trim-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-019-piped-trim-abaya"><div class="product-name">Piped Trim Abaya</div></a>
+<div class="product-price">$58.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-020-crochet-panel-co-ord-set" data-price="44.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-020-crochet-panel-co-ord-set"><img alt="Crochet Panel Co-ord Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.48 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-020-crochet-panel-co-ord-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-020-crochet-panel-co-ord-set"><div class="product-name">Crochet Panel Co-ord Set</div></a>
+<div class="product-price">$44.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-021-white-tailored-suit-set" data-price="62.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-021-white-tailored-suit-set"><img alt="White Tailored Suit Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.48 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-021-white-tailored-suit-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-021-white-tailored-suit-set"><div class="product-name">White Tailored Suit Set</div></a>
+<div class="product-price">$62.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-022-brown-co-ord-skirt-set" data-price="47.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-022-brown-co-ord-skirt-set"><img alt="Brown Co-ord Skirt Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.48 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-022-brown-co-ord-skirt-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-022-brown-co-ord-skirt-set"><div class="product-name">Brown Co-ord Skirt Set</div></a>
+<div class="product-price">$47.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-023-denim-pinafore-dress" data-price="41.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-023-denim-pinafore-dress"><img alt="Denim Pinafore Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.49 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-023-denim-pinafore-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-023-denim-pinafore-dress"><div class="product-name">Denim Pinafore Dress</div></a>
+<div class="product-price">$41.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-024-white-piped-black-abaya" data-price="56.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-024-white-piped-black-abaya"><img alt="White Piped Black Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.49 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-024-white-piped-black-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-024-white-piped-black-abaya"><div class="product-name">White Piped Black Abaya</div></a>
+<div class="product-price">$56.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-025-pinafore-overall-dress" data-price="39.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-025-pinafore-overall-dress"><img alt="Pinafore Overall Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.50 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-025-pinafore-overall-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-025-pinafore-overall-dress"><div class="product-name">Pinafore Overall Dress</div></a>
+<div class="product-price">$39.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-026-asymmetric-brown-maxi-dress" data-price="36.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-026-asymmetric-brown-maxi-dress"><img alt="Asymmetric Brown Maxi Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.50 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-026-asymmetric-brown-maxi-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-026-asymmetric-brown-maxi-dress"><div class="product-name">Asymmetric Brown Maxi Dress</div></a>
+<div class="product-price">$36.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-027-brown-wrap-dress-look" data-price="43.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-027-brown-wrap-dress-look"><img alt="Brown Wrap Dress Look" src="assets/WhatsApp Image 2026-09-06 at 6.14.51 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-027-brown-wrap-dress-look">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-027-brown-wrap-dress-look"><div class="product-name">Brown Wrap Dress Look</div></a>
+<div class="product-price">$43.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dresses section -->
+<section class="py-4" id="dresses">
+<div class="container-page">
+<h2 class="mb-4" style="font-family:'Cormorant Garamond', serif;">Dresses</h2>
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-028-contrast-collar-open-abaya" data-price="52.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-028-contrast-collar-open-abaya"><img alt="Contrast Collar Open Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.51 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-028-contrast-collar-open-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-028-contrast-collar-open-abaya"><div class="product-name">Contrast Collar Open Abaya</div></a>
+<div class="product-price">$52.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-029-belted-embroidered-abaya" data-price="58.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-029-belted-embroidered-abaya"><img alt="Belted Embroidered Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.51 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-029-belted-embroidered-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-029-belted-embroidered-abaya"><div class="product-name">Belted Embroidered Abaya</div></a>
+<div class="product-price">$58.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-030-dusty-blue-embroidered-cuff-abaya" data-price="56.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-030-dusty-blue-embroidered-cuff-abaya"><img alt="Dusty Blue Embroidered Cuff Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.52 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-030-dusty-blue-embroidered-cuff-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-030-dusty-blue-embroidered-cuff-abaya"><div class="product-name">Dusty Blue Embroidered Cuff Abaya</div></a>
+<div class="product-price">$56.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-031-gold-button-brown-abaya" data-price="47.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-031-gold-button-brown-abaya"><img alt="Gold Button Brown Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.52 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-031-gold-button-brown-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-031-gold-button-brown-abaya"><div class="product-name">Gold Button Brown Abaya</div></a>
+<div class="product-price">$47.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-032-dusty-blue-belted-abaya-set" data-price="59.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-032-dusty-blue-belted-abaya-set"><img alt="Dusty Blue Belted Abaya Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.52 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-032-dusty-blue-belted-abaya-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-032-dusty-blue-belted-abaya-set"><div class="product-name">Dusty Blue Belted Abaya Set</div></a>
+<div class="product-price">$59.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-033-burgundy-hooded-coat-abaya" data-price="69.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-033-burgundy-hooded-coat-abaya"><img alt="Burgundy Hooded Coat Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.53 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-033-burgundy-hooded-coat-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-033-burgundy-hooded-coat-abaya"><div class="product-name">Burgundy Hooded Coat Abaya</div></a>
+<div class="product-price">$69.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-034-burgundy-draped-maxi-dress" data-price="44.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-034-burgundy-draped-maxi-dress"><img alt="Burgundy Draped Maxi Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.53 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-034-burgundy-draped-maxi-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-034-burgundy-draped-maxi-dress"><div class="product-name">Burgundy Draped Maxi Dress</div></a>
+<div class="product-price">$44.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-035-burgundy-bow-sleeve-open-abaya" data-price="54.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-035-burgundy-bow-sleeve-open-abaya"><img alt="Burgundy Bow Sleeve Open Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.53 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-035-burgundy-bow-sleeve-open-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-035-burgundy-bow-sleeve-open-abaya"><div class="product-name">Burgundy Bow Sleeve Open Abaya</div></a>
+<div class="product-price">$54.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-036-ivory-beaded-shoulder-abaya-set" data-price="72.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-036-ivory-beaded-shoulder-abaya-set"><img alt="Ivory Beaded Shoulder Abaya Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.54 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-036-ivory-beaded-shoulder-abaya-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-036-ivory-beaded-shoulder-abaya-set"><div class="product-name">Ivory Beaded Shoulder Abaya Set</div></a>
+<div class="product-price">$72.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-037-beige-bow-sleeve-open-abaya" data-price="53.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-037-beige-bow-sleeve-open-abaya"><img alt="Beige Bow Sleeve Open Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.54 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-037-beige-bow-sleeve-open-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-037-beige-bow-sleeve-open-abaya"><div class="product-name">Beige Bow Sleeve Open Abaya</div></a>
+<div class="product-price">$53.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-038-ivory-pleated-layer-abaya" data-price="64.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-038-ivory-pleated-layer-abaya"><img alt="Ivory Pleated Layer Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.54 AM (3).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-038-ivory-pleated-layer-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-038-ivory-pleated-layer-abaya"><div class="product-name">Ivory Pleated Layer Abaya</div></a>
+<div class="product-price">$64.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-039-leopard-trim-beige-abaya" data-price="57.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-039-leopard-trim-beige-abaya"><img alt="Leopard Trim Beige Abaya" src="assets/WhatsApp Image 2026-09-06 at 6.14.54 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-039-leopard-trim-beige-abaya">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-039-leopard-trim-beige-abaya"><div class="product-name">Leopard Trim Beige Abaya</div></a>
+<div class="product-price">$57.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-040-ivory-button-front-pinafore-dress" data-price="41.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-040-ivory-button-front-pinafore-dress"><img alt="Ivory Button Front Pinafore Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.55 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-040-ivory-button-front-pinafore-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-040-ivory-button-front-pinafore-dress"><div class="product-name">Ivory Button Front Pinafore Dress</div></a>
+<div class="product-price">$41.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-041-mauve-belted-pinafore-dress" data-price="42.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-041-mauve-belted-pinafore-dress"><img alt="Mauve Belted Pinafore Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.55 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-041-mauve-belted-pinafore-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-041-mauve-belted-pinafore-dress"><div class="product-name">Mauve Belted Pinafore Dress</div></a>
+<div class="product-price">$42.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pants section -->
+<section class="py-4" id="pants">
+<div class="container-page">
+<h2 class="mb-4" style="font-family:'Cormorant Garamond', serif;">Pants</h2>
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-042-olive-black-wide-leg-tie-pants" data-price="26.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-042-olive-black-wide-leg-tie-pants"><img alt="Olive &amp; Black Wide Leg Tie Pants" src="assets/WhatsApp Image 2026-09-06 at 6.14.55 AM (3).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-042-olive-black-wide-leg-tie-pants">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-042-olive-black-wide-leg-tie-pants"><div class="product-name">Olive &amp; Black Wide Leg Tie Pants</div></a>
+<div class="product-price">$26.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-043-wide-leg-tie-pants" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-043-wide-leg-tie-pants"><img alt="Wide Leg Tie Pants" src="assets/WhatsApp Image 2026-09-06 at 6.14.55 AM (4).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-043-wide-leg-tie-pants">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-043-wide-leg-tie-pants"><div class="product-name">Wide Leg Tie Pants</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-044-cream-button-detail-wide-leg-pants" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-044-cream-button-detail-wide-leg-pants"><img alt="Cream Button Detail Wide Leg Pants" src="assets/WhatsApp Image 2026-09-06 at 6.14.55 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-044-cream-button-detail-wide-leg-pants">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-044-cream-button-detail-wide-leg-pants"><div class="product-name">Cream Button Detail Wide Leg Pants</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blouses & Co-ord Sets section -->
+<section class="py-4" id="blouses">
+<div class="container-page">
+<h2 class="mb-4" style="font-family:'Cormorant Garamond', serif;">Blouses &amp; Co-ord Sets</h2>
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-045-olive-shirt-pants-co-ord-set" data-price="38.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-045-olive-shirt-pants-co-ord-set"><img alt="Olive Shirt &amp; Pants Co-ord Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.56 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-045-olive-shirt-pants-co-ord-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-045-olive-shirt-pants-co-ord-set"><div class="product-name">Olive Shirt &amp; Pants Co-ord Set</div></a>
+<div class="product-price">$38.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-046-baby-blue-shirt-pants-co-ord-set" data-price="39.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-046-baby-blue-shirt-pants-co-ord-set"><img alt="Baby Blue Shirt &amp; Pants Co-ord Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.56 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-046-baby-blue-shirt-pants-co-ord-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-046-baby-blue-shirt-pants-co-ord-set"><div class="product-name">Baby Blue Shirt &amp; Pants Co-ord Set</div></a>
+<div class="product-price">$39.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Suits & Coats section -->
+<section class="py-4" id="suits-coats">
+<div class="container-page">
+<h2 class="mb-4" style="font-family:'Cormorant Garamond', serif;">Suits &amp; Coats</h2>
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-047-black-longline-coat-vest-suit" data-price="74.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-047-black-longline-coat-vest-suit"><img alt="Black Longline Coat Vest Suit" src="assets/WhatsApp Image 2026-09-06 at 6.14.56 AM (3).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-047-black-longline-coat-vest-suit">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-047-black-longline-coat-vest-suit"><div class="product-name">Black Longline Coat Vest Suit</div></a>
+<div class="product-price">$74.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-048-brown-longline-coat-vest-suit" data-price="76.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-048-brown-longline-coat-vest-suit"><img alt="Brown Longline Coat Vest Suit" src="assets/WhatsApp Image 2026-09-06 at 6.14.56 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-048-brown-longline-coat-vest-suit">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-048-brown-longline-coat-vest-suit"><div class="product-name">Brown Longline Coat Vest Suit</div></a>
+<div class="product-price">$76.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-049-grey-blazer-wide-pants-set" data-price="58.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-049-grey-blazer-wide-pants-set"><img alt="Grey Blazer &amp; Wide Pants Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.57 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-049-grey-blazer-wide-pants-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-049-grey-blazer-wide-pants-set"><div class="product-name">Grey Blazer &amp; Wide Pants Set</div></a>
+<div class="product-price">$58.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-050-camel-trench-coat-knit-dress-set" data-price="82.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-050-camel-trench-coat-knit-dress-set"><img alt="Camel Trench Coat &amp; Knit Dress Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.57 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-050-camel-trench-coat-knit-dress-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-050-camel-trench-coat-knit-dress-set"><div class="product-name">Camel Trench Coat &amp; Knit Dress Set</div></a>
+<div class="product-price">$82.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skirts section -->
+<section class="py-4" id="skirts">
+<div class="container-page">
+<h2 class="mb-4" style="font-family:'Cormorant Garamond', serif;">Skirts</h2>
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-051-beige-jacket-brown-skirt-set" data-price="49.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-051-beige-jacket-brown-skirt-set"><img alt="Beige Jacket &amp; Brown Skirt Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.57 AM (3).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-051-beige-jacket-brown-skirt-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-051-beige-jacket-brown-skirt-set"><div class="product-name">Beige Jacket &amp; Brown Skirt Set</div></a>
+<div class="product-price">$49.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-052-blue-shirt-jacket-skirt-set" data-price="52.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-052-blue-shirt-jacket-skirt-set"><img alt="Blue Shirt Jacket &amp; Skirt Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.57 AM (4).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-052-blue-shirt-jacket-skirt-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-052-blue-shirt-jacket-skirt-set"><div class="product-name">Blue Shirt Jacket &amp; Skirt Set</div></a>
+<div class="product-price">$52.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-053-maroon-sweater-floral-midi-skirt-set" data-price="34.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-053-maroon-sweater-floral-midi-skirt-set"><img alt="Maroon Sweater &amp; Floral Midi Skirt Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.57 AM (5).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-053-maroon-sweater-floral-midi-skirt-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-053-maroon-sweater-floral-midi-skirt-set"><div class="product-name">Maroon Sweater &amp; Floral Midi Skirt Set</div></a>
+<div class="product-price">$34.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-054-maroon-sweater-cream-flare-skirt-set" data-price="36.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-054-maroon-sweater-cream-flare-skirt-set"><img alt="Maroon Sweater &amp; Cream Flare Skirt Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.57 AM (6).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-054-maroon-sweater-cream-flare-skirt-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-054-maroon-sweater-cream-flare-skirt-set"><div class="product-name">Maroon Sweater &amp; Cream Flare Skirt Set</div></a>
+<div class="product-price">$36.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-055-pink-jacket-cream-flare-skirt-set" data-price="44.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-055-pink-jacket-cream-flare-skirt-set"><img alt="Pink Jacket &amp; Cream Flare Skirt Set" src="assets/WhatsApp Image 2026-09-06 at 6.14.58 AM (1).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-055-pink-jacket-cream-flare-skirt-set">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-055-pink-jacket-cream-flare-skirt-set"><div class="product-name">Pink Jacket &amp; Cream Flare Skirt Set</div></a>
+<div class="product-price">$44.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-056-wrap-midi-dress" data-price="36.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-056-wrap-midi-dress"><img alt="Wrap Midi Dress" src="assets/WhatsApp Image 2026-09-06 at 6.14.58 AM (2).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-056-wrap-midi-dress">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-056-wrap-midi-dress"><div class="product-name">Wrap Midi Dress</div></a>
+<div class="product-price">$36.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-057-cropped-knit-sweater" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-057-cropped-knit-sweater"><img alt="Cropped Knit Sweater" src="assets/WhatsApp Image 2026-09-06 at 6.14.58 AM (3).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-057-cropped-knit-sweater">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-057-cropped-knit-sweater"><div class="product-name">Cropped Knit Sweater</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-058-satin-cami-top" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-058-satin-cami-top"><img alt="Satin Cami Top" src="assets/WhatsApp Image 2026-09-06 at 6.14.58 AM (4).jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-058-satin-cami-top">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-058-satin-cami-top"><div class="product-name">Satin Cami Top</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-059-wide-leg-linen-pants" data-price="33.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-059-wide-leg-linen-pants"><img alt="Wide Leg Linen Pants" src="assets/WhatsApp Image 2026-09-06 at 6.14.58 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-059-wide-leg-linen-pants">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-059-wide-leg-linen-pants"><div class="product-name">Wide Leg Linen Pants</div></a>
+<div class="product-price">$33.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="women" data-id="legacy-women-060-denim-mini-skirt" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-women-060-denim-mini-skirt"><img alt="Denim Mini Skirt" src="assets/WhatsApp Image 2026-09-06 at 6.14.59 AM.jpeg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-women-060-denim-mini-skirt">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-women-060-denim-mini-skirt"><div class="product-name">Denim Mini Skirt</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<h5>SHESTYLE</h5>
+<p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+</div>
+<div class="col-6 col-md-3">
+<h5>SHOP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="women.html">Women</a></li>
+<li class="mb-2"><a href="men.html">Men</a></li>
+<li class="mb-2"><a href="kids.html">Kids</a></li>
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>HELP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="#">Shipping &amp; Returns</a></li>
+<li class="mb-2"><a href="#">Track Order</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>NEWSLETTER</h5>
+<p class="small">Sign up for style tips and early access to sales.</p>
+<div class="d-flex gap-2">
+<input class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;" type="email"/>
+<button class="btn btn-sm btn-light">Join</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script><script src="products-data-extra.js"></script><script src="legacy-products.js"></script><script src="wishlist.js"></script><script src="cart-store.js"></script><script src="catalog.js"></script><script src="static-interactions.js"></script><script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — SHESTYLE</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div class="admin-shell">
+
+  <!-- Sidebar -->
+  <aside class="admin-sidebar">
+    <div class="admin-brand">SHESTYLE</div>
+
+    <nav class="admin-nav">
+      <button type="button" class="admin-nav-link active" data-tab="dashboard">
+        <i class="fa-solid fa-gauge"></i> Dashboard
+      </button>
+      <button type="button" class="admin-nav-link" data-tab="products">
+        <i class="fa-solid fa-shirt"></i> Products
+      </button>
+      <button type="button" class="admin-nav-link" data-tab="orders">
+        <i class="fa-solid fa-bag-shopping"></i> Orders
+      </button>
+      <button type="button" class="admin-nav-link" data-tab="users">
+        <i class="fa-solid fa-users"></i> Users
+      </button>
+      <button type="button" class="admin-nav-link" data-tab="categories">
+        <i class="fa-solid fa-layer-group"></i> Categories
+      </button>
+      <button type="button" class="admin-nav-link" data-tab="coupons">
+        <i class="fa-solid fa-tag"></i> Coupons
+      </button>
+      <button type="button" class="admin-nav-link" data-tab="settings">
+        <i class="fa-solid fa-gear"></i> Settings
+      </button>
+    </nav>
+
+    <button type="button" class="admin-logout" id="adminLogout">
+      <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+    </button>
+  </aside>
+
+  <!-- Main content -->
+  <main class="admin-main">
+
+    <!-- ============ Dashboard tab ============ -->
+    <section class="admin-panel" id="tab-dashboard">
+      <h1 class="admin-title">Dashboard</h1>
+
+      <div class="admin-stats">
+        <div class="stat-card">
+          <span class="stat-label">Total Orders</span>
+          <span class="stat-value" id="statOrders">0</span>
+          <span class="stat-link">View all orders</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Total Products</span>
+          <span class="stat-value" id="statProducts">0</span>
+          <span class="stat-link">View all products</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Total Users</span>
+          <span class="stat-value" id="statUsers">0</span>
+          <span class="stat-link">View all users</span>
+        </div>
+        <div class="stat-card stat-card-accent">
+          <span class="stat-label">Total Sales</span>
+          <span class="stat-value" id="statSales">$0</span>
+          <span class="stat-link">View reports</span>
+        </div>
+      </div>
+
+      <div class="admin-grid">
+        <div class="admin-card">
+          <div class="admin-card-head">
+            <h2>Recent Orders</h2>
+          </div>
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Date</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="recentOrdersBody"></tbody>
+          </table>
+          <p class="admin-empty-note" id="recentOrdersEmpty">No orders yet. Orders placed at checkout will show up here.</p>
+          <button type="button" class="admin-view-all" data-goto-tab="orders">View all orders</button>
+        </div>
+
+        <div class="admin-card">
+          <div class="admin-card-head">
+            <h2>Top Products</h2>
+          </div>
+          <div id="topProductsList" class="top-products-list"></div>
+          <p class="admin-empty-note" id="topProductsEmpty">No sales yet — top products will appear once orders come in.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Products tab ============ -->
+<section class="admin-panel d-none" id="tab-products">
+
+  <div class="admin-panel-head">
+
+    <h1 class="admin-title">Products</h1>
+
+    <div>
+      <input
+        type="text"
+        id="productSearch"
+        class="admin-search"
+        placeholder="Search products…"
+      >
+
+      <button
+        type="button"
+        id="addProductBtn"
+        class="btn btn-primary">
+        Add Product
+      </button>
+    </div>
+
+  </div>
+
+
+  <div class="admin-card">
+
+    <table class="admin-table">
+
+      <thead>
+
+        <tr>
+          <th></th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+
+      </thead>
+
+      <tbody id="productsBody"></tbody>
+
+    </table>
+
+  </div>
+  <!-- ============ Product Form ============ -->
+
+<div class="admin-card d-none" id="productFormCard">
+
+  <h2 id="productFormTitle">Add Product</h2>
+
+  <form id="productForm">
+
+    <input type="hidden" id="productID">
+
+    <div>
+      <label>Product Name</label>
+      <input
+        type="text"
+        id="productName"
+        required>
+    </div>
+
+    <div>
+      <label>Description</label>
+      <textarea
+        id="productDescription"></textarea>
+    </div>
+
+    <div>
+      <label>Price</label>
+      <input
+        type="number"
+        id="productPrice"
+        step="0.01"
+        required>
+    </div>
+
+    <div>
+      <label>Original Price</label>
+      <input
+        type="number"
+        id="productOriginalPrice"
+        step="0.01">
+    </div>
+
+    <div>
+      <label>Stock</label>
+      <input
+        type="number"
+        id="productStock"
+        min="0"
+        required>
+    </div>
+
+    <div>
+      <label>Category</label>
+
+      <select id="productCategory" required>
+        <option value="">Select Category</option>
+      </select>
+
+    </div>
+
+    <br>
+
+    <button type="submit" class="btn btn-primary">
+      Save Product
+    </button>
+
+    <button
+      type="button"
+      id="cancelProductBtn"
+      class="btn btn-secondary">
+      Cancel
+    </button>
+
+  </form>
+
+</div>
+
+<!-- ============ Orders tab ============ -->
+
+<section class="admin-panel d-none" id="tab-orders">
+
+  <div class="admin-panel-head">
+
+    <h1 class="admin-title">Orders</h1>
+
+  </div>
+
+
+  <div class="admin-card">
+
+    <table class="admin-table">
+
+      <thead>
+
+        <tr>
+          <th>Order</th>
+          <th>Customer</th>
+          <th>Email</th>
+          <th>Items</th>
+          <th>Total</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+
+      </thead>
+
+      <tbody id="ordersBody"></tbody>
+
+    </table>
+
+
+    <div id="ordersEmpty" style="display: none;">
+      No orders found.
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- ============ Users tab ============ -->
+
+<section class="admin-panel d-none" id="tab-users">
+
+  <div class="admin-panel-head">
+
+    <h1 class="admin-title">Users</h1>
+
+  </div>
+
+
+  <div class="admin-card">
+
+    <table class="admin-table">
+
+      <thead>
+
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Role</th>
+        </tr>
+
+      </thead>
+
+      <tbody id="usersBody"></tbody>
+
+    </table>
+
+
+    <div id="usersEmpty" style="display: none;">
+      No users found.
+    </div>
+
+  </div>
+
+</section>
+    <!-- ============ Placeholder tabs ============ -->
+    <section class="admin-panel d-none" id="tab-categories">
+      <h1 class="admin-title">Categories</h1>
+      <div class="admin-card admin-placeholder">
+        <i class="fa-solid fa-layer-group"></i>
+        <p>Category management isn't wired to a real backend in this demo — products are grouped by the <code>category</code> field in the product catalog.</p>
+      </div>
+    </section>
+
+    <section class="admin-panel d-none" id="tab-coupons">
+      <h1 class="admin-title">Coupons</h1>
+      <div class="admin-card admin-placeholder">
+        <i class="fa-solid fa-tag"></i>
+        <p>Coupon management isn't wired to a real backend in this demo.</p>
+      </div>
+    </section>
+
+    <section class="admin-panel d-none" id="tab-settings">
+      <h1 class="admin-title">Settings</h1>
+      <div class="admin-card admin-placeholder">
+        <i class="fa-solid fa-gear"></i>
+        <p>Store settings aren't wired to a real backend in this demo.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="products-data.js"></script>
+<script src="products-data-extra.js"></script>
+<script src="auth.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

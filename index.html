@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHESTYLE — New Season Collection</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="announce-bar">Free shipping on orders over $59!</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container-page">
+
+    <div class="navbar-top">
+      <button class="icon-btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <a class="brand-logo" href="index.html">SHESTYLE</a>
+
+      <div class="header-icons">
+        <button class="icon-btn" type="button" id="searchToggle" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <a href="wishlist.html" class="icon-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+
+    <input type="search" class="search-box search-box-full d-none" id="searchInput" placeholder="Search products...">
+
+    <nav class="tab-nav">
+      <ul class="tab-nav-list">
+        <li><a class="tab-link active" href="index.html">Home</a></li>
+        <li><a class="tab-link" href="women.html">Women</a></li>
+        <li><a class="tab-link" href="men.html">Men</a></li>
+        <li><a class="tab-link" href="kids.html">Kids</a></li>
+        <li><a class="tab-link" href="accessories.html">Accessories</a></li>
+        <li><a class="tab-link text-rose" href="sale.html">Sale</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Side menu (offcanvas) -->
+<div class="offcanvas offcanvas-start side-menu" tabindex="-1" id="sideMenu" aria-labelledby="sideMenuLabel">
+  <div class="offcanvas-header">
+    <span class="brand-logo" id="sideMenuLabel">SHESTYLE</span>
+    <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+
+  <div class="offcanvas-body p-0">
+
+    <ul class="sidemenu-cat-list list-unstyled m-0">
+      <li><a href="just-for-you.html">Just For You</a></li>
+      <li><a href="sale.html" class="text-rose">Sale</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+      <li><a href="jewelry-accessories.html">Jewelry &amp; Accessories</a></li>
+      <li><a href="beauty-health.html">Beauty &amp; Health</a></li>
+      <li><a href="office-school-supplies.html">Office &amp; School Supplies</a></li>
+      <li><a href="baby-maternity.html">Baby &amp; Maternity</a></li>
+      <li><a href="bags-luggage.html">Bags &amp; Luggage</a></li>
+    </ul>
+
+    <div class="sidemenu-divider"></div>
+
+    <a href="#" class="sidemenu-row">
+      <span><i class="fa-solid fa-dollar-sign"></i>Change Currency</span>
+      <span class="sidemenu-row-value">USD</span>
+    </a>
+    <a href="#" class="sidemenu-row">
+      <span><i class="fa-solid fa-globe"></i>Change Language</span>
+      <span class="sidemenu-row-value">English</span>
+    </a>
+
+    <div class="sidemenu-divider"></div>
+
+    <div class="sidemenu-accordion">
+      <button class="sidemenu-accordion-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#shestyleInfo" aria-expanded="true" aria-controls="shestyleInfo">
+        SHESTYLE Info <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="collapse show" id="shestyleInfo">
+        <ul class="list-unstyled sidemenu-info-list m-0">
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Return Policy</a></li>
+          <li><a href="#">How to Pay</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+          <li><a href="#">Social Responsibility</a></li>
+          <li><a href="#">Privacy Center</a></li>
+          <li><a href="#">Manage Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidemenu-divider"></div>
+
+    <div class="sidemenu-download">
+      <h6>Download App</h6>
+      <a href="#" class="download-badge"><i class="fa-brands fa-google-play"></i> Get it on Google Play</a>
+    </div>
+
+  </div>
+
+  <div class="sidemenu-bottom-nav">
+    <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+    <a href="#"><i class="fa-solid fa-headset"></i><span>Support</span></a>
+    <a href="login.html"><i class="fa-regular fa-user"></i><span>Account</span></a>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">NEW SEASON COLLECTION</div>
+    <h1>Discover the latest trends for you</h1>
+    <p>Effortless pieces for everyday wear, cut from soft fabrics and finished with quiet, considered detail.</p>
+    <a href="products.html" class="btn-ink">Shop Now</a>
+  </div>
+  <div class="hero-dots">
+    <span class="active"></span><span></span><span></span>
+  </div>
+</section>
+
+<!-- Perks -->
+<section class="perks">
+  <div class="container-page">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="perk"><i class="fa-solid fa-truck-fast"></i>
+          <div><div class="perk-title">Free Shipping</div><div class="perk-sub">On orders over $59</div></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="perk"><i class="fa-solid fa-rotate-left"></i>
+          <div><div class="perk-title">Easy Returns</div><div class="perk-sub">Within 30 days</div></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="perk"><i class="fa-solid fa-lock"></i>
+          <div><div class="perk-title">Secure Payment</div><div class="perk-sub">100% secure checkout</div></div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="perk"><i class="fa-solid fa-headset"></i>
+          <div><div class="perk-title">24/7 Support</div><div class="perk-sub">Dedicated support</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Shop by category -->
+<section class="py-5">
+  <div class="container-page">
+    <div class="section-head">
+      <h2>Shop by Category</h2>
+      <a href="products.html" class="view-all">View All</a>
+    </div>
+    <div class="row text-center g-4">
+      <div class="col-6 col-md-3">
+        <a href="women.html" class="category-item">
+          <div class="category-circle"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=400&auto=format&fit=crop" alt="Women"></div>
+          <div class="cat-name">Women</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="men.html" class="category-item">
+          <div class="category-circle"><img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?q=80&w=400&auto=format&fit=crop" alt="Men"></div>
+          <div class="cat-name">Men</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="kids.html" class="category-item">
+          <div class="category-circle"><img src="https://images.unsplash.com/photo-1519457851160-93a375542007?q=80&w=400&auto=format&fit=crop" alt="Kids"></div>
+          <div class="cat-name">Kids</div>
+        </a>
+      </div>
+      <div class="col-6 col-md-3">
+        <a href="accessories.html" class="category-item">
+          <div class="category-circle"><img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?q=80&w=400&auto=format&fit=crop" alt="Accessories"></div>
+          <div class="cat-name">Accessories</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Best sellers -->
+<section class="py-4">
+  <div class="container-page">
+    <div class="section-head">
+      <h2>Best Sellers</h2>
+      <a href="products.html" class="view-all">View All</a>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-6 col-md-3">
+        <div class="product-card" data-id="puff-sleeve-dress">
+          <div class="product-media">
+            <a href="product-details.html?id=puff-sleeve-dress"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=500&auto=format&fit=crop" alt="Puff Sleeve Dress"></a>
+            <button class="product-wish" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="product-add-line border-0 w-100" data-add-to-cart="puff-sleeve-dress">ADD TO CART</button>
+          </div>
+          <a href="product-details.html?id=puff-sleeve-dress"><div class="product-name">Puff Sleeve Dress</div></a>
+          <div class="product-price">$29.99</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="product-card" data-id="oversized-blazer">
+          <div class="product-media">
+            <a href="product-details.html?id=oversized-blazer"><img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=500&auto=format&fit=crop" alt="Oversized Blazer"></a>
+            <button class="product-wish" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="product-add-line border-0 w-100" data-add-to-cart="oversized-blazer">ADD TO CART</button>
+          </div>
+          <a href="product-details.html?id=oversized-blazer"><div class="product-name">Oversized Blazer</div></a>
+          <div class="product-price">$39.99</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="product-card" data-id="high-waist-jeans">
+          <div class="product-media">
+            <a href="product-details.html?id=high-waist-jeans"><img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=500&auto=format&fit=crop" alt="High Waist Jeans"></a>
+            <button class="product-wish" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="product-add-line border-0 w-100" data-add-to-cart="high-waist-jeans">ADD TO CART</button>
+          </div>
+          <a href="product-details.html?id=high-waist-jeans"><div class="product-name">High Waist Jeans</div></a>
+          <div class="product-price">$34.99</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3">
+        <div class="product-card" data-id="floral-print-top">
+          <div class="product-media">
+            <a href="product-details.html?id=floral-print-top"><img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=500&auto=format&fit=crop" alt="Floral Print Top"></a>
+            <button class="product-wish" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+            <button class="product-add-line border-0 w-100" data-add-to-cart="floral-print-top">ADD TO CART</button>
+          </div>
+          <a href="product-details.html?id=floral-print-top"><div class="product-name">Floral Print Top</div></a>
+          <div class="product-price">$19.99</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container-page">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <h5>SHESTYLE</h5>
+        <p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>SHOP</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="women.html">Women</a></li>
+          <li class="mb-2"><a href="men.html">Men</a></li>
+          <li class="mb-2"><a href="kids.html">Kids</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>HELP</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#">Shipping & Returns</a></li>
+          <li class="mb-2"><a href="#">Track Order</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>NEWSLETTER</h5>
+        <p class="small">Sign up for style tips and early access to sales.</p>
+        <div class="d-flex gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;">
+          <button class="btn btn-sm btn-light">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script>
+<script src="products-data-extra.js"></script>
+<script src="wishlist.js"></script>
+<script src="cart-store.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

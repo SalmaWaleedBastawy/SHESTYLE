@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kids' Shoes — SHESTYLE</title>
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style1.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Announcement bar -->
+<div class="announce-bar">Free shipping on orders over $59!</div>
+<!-- Header -->
+<header class="site-header">
+<div class="container-page">
+<div class="navbar-top">
+<button aria-controls="sideMenu" aria-label="Open menu" class="icon-btn menu-btn" data-bs-target="#sideMenu" data-bs-toggle="offcanvas" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+<a class="brand-logo" href="index.html">SHESTYLE</a>
+<div class="header-icons">
+<button aria-label="Search" class="icon-btn" id="searchToggle" type="button">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<a aria-label="Wishlist" class="icon-btn" href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+<a aria-label="Cart" class="icon-btn" href="cart.html">
+<i class="fa-solid fa-bag-shopping"></i>
+<span class="cart-count">0</span>
+</a>
+</div>
+</div>
+<input class="search-box search-box-full d-none" id="searchInput" placeholder="Search products..." type="search"/>
+<nav class="tab-nav">
+<ul class="tab-nav-list">
+<li><a class="tab-link" href="index.html">Home</a></li>
+<li><a class="tab-link" href="women.html">Women</a></li>
+<li><a class="tab-link" href="products.html?category=men">Men</a></li>
+<li><a class="tab-link" href="products.html?category=kids">Kids</a></li>
+<li><a class="tab-link" href="accessories.html">Accessories</a></li>
+<li><a class="tab-link text-rose" href="sale.html">Sale</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<!-- Side menu (offcanvas) -->
+<div aria-labelledby="sideMenuLabel" class="offcanvas offcanvas-start side-menu" id="sideMenu" tabindex="-1">
+<div class="offcanvas-header">
+<span class="brand-logo" id="sideMenuLabel">SHESTYLE</span>
+<button aria-label="Close" class="btn-close-custom" data-bs-dismiss="offcanvas" type="button">
+<i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+<div class="offcanvas-body p-0">
+<ul class="sidemenu-cat-list list-unstyled m-0">
+<li><a href="just-for-you.html">Just For You</a></li>
+<li><a class="text-rose" href="sale.html">Sale</a></li>
+<li><a class="current" href="shoes.html">Shoes</a></li>
+<li><a href="jewelry-accessories.html">Jewelry &amp; Accessories</a></li>
+<li><a href="beauty-health.html">Beauty &amp; Health</a></li>
+<li><a href="office-school-supplies.html">Office &amp; School Supplies</a></li>
+<li><a href="baby-maternity.html">Baby &amp; Maternity</a></li>
+<li><a href="bags-luggage.html">Bags &amp; Luggage</a></li>
+</ul>
+<div class="sidemenu-divider"></div>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-dollar-sign"></i>Change Currency</span>
+<span class="sidemenu-row-value">USD</span>
+</a>
+<a class="sidemenu-row" href="#">
+<span><i class="fa-solid fa-globe"></i>Change Language</span>
+<span class="sidemenu-row-value">English</span>
+</a>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-accordion">
+<button aria-controls="shestyleInfo" aria-expanded="true" class="sidemenu-accordion-toggle" data-bs-target="#shestyleInfo" data-bs-toggle="collapse" type="button">
+        SHESTYLE Info <i class="fa-solid fa-chevron-down"></i>
+</button>
+<div class="collapse show" id="shestyleInfo">
+<ul class="list-unstyled sidemenu-info-list m-0">
+<li><a href="#">Shipping Info</a></li>
+<li><a href="#">Return Policy</a></li>
+<li><a href="#">How to Pay</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms &amp; Conditions</a></li>
+<li><a href="#">Social Responsibility</a></li>
+<li><a href="#">Privacy Center</a></li>
+<li><a href="#">Manage Cookies</a></li>
+</ul>
+</div>
+</div>
+<div class="sidemenu-divider"></div>
+<div class="sidemenu-download">
+<h6>Download App</h6>
+<a class="download-badge" href="#"><i class="fa-brands fa-google-play"></i> Get it on Google Play</a>
+</div>
+</div>
+<div class="sidemenu-bottom-nav">
+<a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+<a href="wishlist.html"><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+<a href="#"><i class="fa-solid fa-headset"></i><span>Support</span></a>
+<a href="login.html"><i class="fa-regular fa-user"></i><span>Account</span></a>
+</div>
+</div>
+<!-- Page banner -->
+<div class="page-banner">
+<div class="container-page">
+<nav class="breadcrumb-min mb-2"><a href="index.html">Home</a> / <span>Kids' Shoes</span></nav>
+<h1>Kids' Shoes</h1>
+</div>
+</div>
+<!-- Product grid -->
+<section class="py-4">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-001-funny-bear-clogs" data-price="18.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-001-funny-bear-clogs"><img alt="Funny Bear Clogs" src="images/bear-clogs.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-001-funny-bear-clogs">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-001-funny-bear-clogs"><div class="product-name">Funny Bear Clogs</div></a>
+<div class="product-price">$18.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-002-suede-velcro-boots" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-002-suede-velcro-boots"><img alt="Suede Velcro Boots" src="images/suede-velcro-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-002-suede-velcro-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-002-suede-velcro-boots"><div class="product-name">Suede Velcro Boots</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-003-pink-trim-sneakers" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-003-pink-trim-sneakers"><img alt="Pink Trim Sneakers" src="images/pink-trim-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-003-pink-trim-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-003-pink-trim-sneakers"><div class="product-name">Pink Trim Sneakers</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-004-pearl-bow-sandals" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-004-pearl-bow-sandals"><img alt="Pearl Bow Sandals" src="images/pearl-bow-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-004-pearl-bow-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-004-pearl-bow-sandals"><div class="product-name">Pearl Bow Sandals</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-005-sock-style-sneakers" data-price="17.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-005-sock-style-sneakers"><img alt="Sock-Style Sneakers" src="images/sock-style-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-005-sock-style-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-005-sock-style-sneakers"><div class="product-name">Sock-Style Sneakers</div></a>
+<div class="product-price">$17.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-006-suede-snow-boots" data-price="26.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-006-suede-snow-boots"><img alt="Suede Snow Boots" src="images/suede-snow-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-006-suede-snow-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-006-suede-snow-boots"><div class="product-name">Suede Snow Boots</div></a>
+<div class="product-price">$26.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-007-ribbon-bow-mary-janes" data-price="20.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-007-ribbon-bow-mary-janes"><img alt="Ribbon Bow Mary Janes" src="images/ribbon-bow-maryjanes.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-007-ribbon-bow-mary-janes">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-007-ribbon-bow-mary-janes"><div class="product-name">Ribbon Bow Mary Janes</div></a>
+<div class="product-price">$20.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-008-quilted-ankle-boots" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-008-quilted-ankle-boots"><img alt="Quilted Ankle Boots" src="images/quilted-ankle-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-008-quilted-ankle-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-008-quilted-ankle-boots"><div class="product-name">Quilted Ankle Boots</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-009-suede-loafers" data-price="34.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-009-suede-loafers"><img alt="Suede Loafers" src="images/suede-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-009-suede-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-009-suede-loafers"><div class="product-name">Suede Loafers</div></a>
+<div class="product-price">$34.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-010-sport-sneakers" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-010-sport-sneakers"><img alt="Sport Sneakers" src="images/sport-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-010-sport-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-010-sport-sneakers"><div class="product-name">Sport Sneakers</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-011-buckle-slide-sandals" data-price="29.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-011-buckle-slide-sandals"><img alt="Buckle Slide Sandals" src="images/buckle-slide-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-011-buckle-slide-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-011-buckle-slide-sandals"><div class="product-name">Buckle Slide Sandals</div></a>
+<div class="product-price">$29.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-012-woven-slide-sandals" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-012-woven-slide-sandals"><img alt="Woven Slide Sandals" src="images/woven-slide-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-012-woven-slide-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-012-woven-slide-sandals"><div class="product-name">Woven Slide Sandals</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-013-chain-detail-boots" data-price="28.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-013-chain-detail-boots"><img alt="Chain Detail Boots" src="images/chain-detail-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-013-chain-detail-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-013-chain-detail-boots"><div class="product-name">Chain Detail Boots</div></a>
+<div class="product-price">$28.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-014-sport-strap-sandals" data-price="16.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-014-sport-strap-sandals"><img alt="Sport Strap Sandals" src="images/sport-strap-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-014-sport-strap-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-014-sport-strap-sandals"><div class="product-name">Sport Strap Sandals</div></a>
+<div class="product-price">$16.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-015-chelsea-boots" data-price="25.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-015-chelsea-boots"><img alt="Chelsea Boots" src="images/chelsea-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-015-chelsea-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-015-chelsea-boots"><div class="product-name">Chelsea Boots</div></a>
+<div class="product-price">$25.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-016-sock-sneakers" data-price="17.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-016-sock-sneakers"><img alt="Sock Sneakers" src="images/sock-sneakers-black.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-016-sock-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-016-sock-sneakers"><div class="product-name">Sock Sneakers</div></a>
+<div class="product-price">$17.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-017-retro-stripe-sneakers" data-price="18.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-017-retro-stripe-sneakers"><img alt="Retro Stripe Sneakers" src="images/retro-stripe-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-017-retro-stripe-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-017-retro-stripe-sneakers"><div class="product-name">Retro Stripe Sneakers</div></a>
+<div class="product-price">$18.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-018-chunky-white-sneakers" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-018-chunky-white-sneakers"><img alt="Chunky White Sneakers" src="images/chunky-white-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-018-chunky-white-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-018-chunky-white-sneakers"><div class="product-name">Chunky White Sneakers</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-019-suede-stripe-sneakers" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-019-suede-stripe-sneakers"><img alt="Suede Stripe Sneakers" src="images/suede-stripe-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-019-suede-stripe-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-019-suede-stripe-sneakers"><div class="product-name">Suede Stripe Sneakers</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-020-bow-loafers" data-price="18.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-020-bow-loafers"><img alt="Bow Loafers" src="images/bow-loafers-blue.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-020-bow-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-020-bow-loafers"><div class="product-name">Bow Loafers</div></a>
+<div class="product-price">$18.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-021-crochet-cross-sandals" data-price="19.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-021-crochet-cross-sandals"><img alt="Crochet Cross Sandals" src="images/crochet-cross-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-021-crochet-cross-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-021-crochet-cross-sandals"><div class="product-name">Crochet Cross Sandals</div></a>
+<div class="product-price">$19.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-022-double-strap-sneakers" data-price="18.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-022-double-strap-sneakers"><img alt="Double Strap Sneakers" src="images/double-strap-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-022-double-strap-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-022-double-strap-sneakers"><div class="product-name">Double Strap Sneakers</div></a>
+<div class="product-price">$18.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-023-woven-strappy-sandals" data-price="20.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-023-woven-strappy-sandals"><img alt="Woven Strappy Sandals" src="images/woven-strappy-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-023-woven-strappy-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-023-woven-strappy-sandals"><div class="product-name">Woven Strappy Sandals</div></a>
+<div class="product-price">$20.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-024-lace-pearl-mary-janes" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-024-lace-pearl-mary-janes"><img alt="Lace Pearl Mary Janes" src="images/lace-pearl-maryjanes.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-024-lace-pearl-mary-janes">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-024-lace-pearl-mary-janes"><div class="product-name">Lace Pearl Mary Janes</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-025-mesh-bow-mary-janes" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-025-mesh-bow-mary-janes"><img alt="Mesh Bow Mary Janes" src="images/mesh-bow-maryjanes.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-025-mesh-bow-mary-janes">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-025-mesh-bow-mary-janes"><div class="product-name">Mesh Bow Mary Janes</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-026-bow-ankle-boots" data-price="26.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-026-bow-ankle-boots"><img alt="Bow Ankle Boots" src="images/bow-ankle-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-026-bow-ankle-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-026-bow-ankle-boots"><div class="product-name">Bow Ankle Boots</div></a>
+<div class="product-price">$26.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-027-pearl-bow-boots" data-price="27.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-027-pearl-bow-boots"><img alt="Pearl Bow Boots" src="images/pearl-bow-boots.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-027-pearl-bow-boots">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-027-pearl-bow-boots"><div class="product-name">Pearl Bow Boots</div></a>
+<div class="product-price">$27.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-028-pink-stripe-sneakers" data-price="18.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-028-pink-stripe-sneakers"><img alt="Pink Stripe Sneakers" src="images/pink-stripe-sneakers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-028-pink-stripe-sneakers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-028-pink-stripe-sneakers"><div class="product-name">Pink Stripe Sneakers</div></a>
+<div class="product-price">$18.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-029-pearl-strap-platform-sandals" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-029-pearl-strap-platform-sandals"><img alt="Pearl Strap Platform Sandals" src="images/pearl-strap-platform-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-029-pearl-strap-platform-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-029-pearl-strap-platform-sandals"><div class="product-name">Pearl Strap Platform Sandals</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-030-patent-bow-mary-janes" data-price="24.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-030-patent-bow-mary-janes"><img alt="Patent Bow Mary Janes" src="images/patent-bow-maryjanes.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-030-patent-bow-mary-janes">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-030-patent-bow-mary-janes"><div class="product-name">Patent Bow Mary Janes</div></a>
+<div class="product-price">$24.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-031-cream-bow-sandals" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-031-cream-bow-sandals"><img alt="Cream Bow Sandals" src="images/cream-bow-sandals.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-031-cream-bow-sandals">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-031-cream-bow-sandals"><div class="product-name">Cream Bow Sandals</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-032-flower-mary-jane" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-032-flower-mary-jane"><img alt="Flower Mary Jane" src="images/flower-maryjane.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-032-flower-mary-jane">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-032-flower-mary-jane"><div class="product-name">Flower Mary Jane</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-033-bow-ankle-strap-flats" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-033-bow-ankle-strap-flats"><img alt="Bow Ankle Strap Flats" src="images/bow-ankle-strap-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-033-bow-ankle-strap-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-033-bow-ankle-strap-flats"><div class="product-name">Bow Ankle Strap Flats</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-034-pearl-bow-flats" data-price="22.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-034-pearl-bow-flats"><img alt="Pearl Bow Flats" src="images/pearl-bow-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-034-pearl-bow-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-034-pearl-bow-flats"><div class="product-name">Pearl Bow Flats</div></a>
+<div class="product-price">$22.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-035-pearl-strap-bow-flats" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-035-pearl-strap-bow-flats"><img alt="Pearl Strap Bow Flats" src="images/pearl-strap-bow-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-035-pearl-strap-bow-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-035-pearl-strap-bow-flats"><div class="product-name">Pearl Strap Bow Flats</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-036-pearl-ruffle-loafers" data-price="23.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-036-pearl-ruffle-loafers"><img alt="Pearl Ruffle Loafers" src="images/pearl-ruffle-loafers.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-036-pearl-ruffle-loafers">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-036-pearl-ruffle-loafers"><div class="product-name">Pearl Ruffle Loafers</div></a>
+<div class="product-price">$23.99</div>
+</div>
+</div>
+<div class="col-6 col-md-3">
+<div class="product-card" data-category="shoes-kids" data-id="legacy-shoes-kids-037-pearl-chain-flats" data-price="21.99">
+<div class="product-media">
+<a href="product-details.html?id=legacy-shoes-kids-037-pearl-chain-flats"><img alt="Pearl Chain Flats" src="images/pearl-chain-flats.jpg"/></a>
+<button aria-label="Add to wishlist" class="product-wish"><i class="fa-regular fa-heart"></i></button>
+<button class="product-add-line border-0 w-100" data-add-to-cart="legacy-shoes-kids-037-pearl-chain-flats">ADD TO CART</button>
+</div>
+<a href="product-details.html?id=legacy-shoes-kids-037-pearl-chain-flats"><div class="product-name">Pearl Chain Flats</div></a>
+<div class="product-price">$21.99</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<h5>SHESTYLE</h5>
+<p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+</div>
+<div class="col-6 col-md-3">
+<h5>SHOP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="women.html">Women</a></li>
+<li class="mb-2"><a href="products.html?category=men">Men</a></li>
+<li class="mb-2"><a href="products.html?category=kids">Kids</a></li>
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>HELP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="#">Shipping &amp; Returns</a></li>
+<li class="mb-2"><a href="#">Track Order</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>NEWSLETTER</h5>
+<p class="small">Sign up for style tips and early access to sales.</p>
+<div class="d-flex gap-2">
+<input class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;" type="email"/>
+<button class="btn btn-sm btn-light">Join</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script><script src="products-data-extra.js"></script><script src="legacy-products.js"></script><script src="wishlist.js"></script><script src="cart-store.js"></script><script src="catalog.js"></script><script src="static-interactions.js"></script><script src="script1.js"></script>
+</body>
+</html>

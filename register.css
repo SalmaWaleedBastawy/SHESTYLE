@@ -1,0 +1,20 @@
+/* =========================================================
+   SHESTYLE — Register page
+   (base auth styles shared with login.css)
+   ========================================================= */
+
+.auth-wrapper-register{
+  grid-template-columns: 1fr 1.05fr;
+}
+.auth-wrapper-register .auth-media{
+  order: -1;
+}
+
+@media (max-width: 860px){
+  .auth-wrapper-register{
+    grid-template-columns: 1fr;
+  }
+  .auth-wrapper-register .auth-media{
+    order: 0;
+  }
+}

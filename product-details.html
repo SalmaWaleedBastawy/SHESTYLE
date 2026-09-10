@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title id="pdPageTitle">Product — SHESTYLE</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="products-details.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="announce-bar">Free shipping on orders over $59!</div>
+<!-- Header -->
+<header class="site-header">
+<div class="container-page">
+<nav class="navbar navbar-expand-lg p-0">
+<div class="d-flex align-items-center justify-content-between w-100 py-3">
+<a class="brand-logo" href="index.html">SHESTYLE</a>
+<button class="navbar-toggler border-0 d-lg-none" data-bs-target="#navMenu" data-bs-toggle="collapse" type="button">
+<i class="fa-solid fa-bars"></i>
+</button>
+<div class="collapse navbar-collapse flex-grow-0 d-none d-lg-flex" id="navMenu">
+<ul class="navbar-nav main-nav gap-1">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html?category=men">Men</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html?category=kids">Kids</a></li>
+<li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+<li class="nav-item"><a class="nav-link text-rose" href="products.html?category=sale">Sale</a></li>
+</ul>
+</div>
+<div class="header-icons d-flex align-items-center">
+<input class="search-box d-none d-md-inline-block" placeholder="Search products..." type="search"/>
+<a href="login.html">Login</a>
+<a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+<a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a>
+</div>
+</div>
+<div class="collapse navbar-collapse d-lg-none" id="navMenu">
+<ul class="navbar-nav main-nav w-100">
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html?category=men">Men</a></li>
+<li class="nav-item"><a class="nav-link" href="products.html?category=kids">Kids</a></li>
+<li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+<li class="nav-item"><a class="nav-link text-rose" href="products.html?category=sale">Sale</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<!-- Breadcrumb -->
+<div class="page-banner">
+<div class="container-page">
+<p class="breadcrumb-min mb-0">
+<a href="index.html">Home</a> /
+      <span id="current-product">Product</span>
+</p>
+</div>
+</div>
+<div class="container-page py-4">
+<div class="row g-5">
+<!-- Gallery -->
+<div class="col-lg-6">
+<div class="pd-gallery">
+<div class="pd-thumb-list" id="pdThumbList"></div>
+<div class="pd-main-image">
+<img alt="" id="pdMainImage" src=""/>
+</div>
+</div>
+</div>
+<!-- Product info -->
+<div class="col-lg-6">
+<div class="pd-info">
+<h1 class="pd-title" id="pdTitle">Product</h1>
+<div class="pd-price" id="pdPrice"></div>
+<div class="pd-rating">
+<span class="pd-stars" id="pdStars"></span>
+<span class="pd-rating-count" id="pdRatingCount"></span>
+</div>
+<!-- Color -->
+<div class="pd-option-group" id="pdColorGroup">
+<p class="pd-option-label">Color: <span id="selectedColorName"></span></p>
+<div class="pd-color-list" id="pdColorList"></div>
+</div>
+<!-- Size -->
+<div class="pd-option-group" id="pdSizeGroup">
+<div class="d-flex justify-content-between align-items-center">
+<p class="pd-option-label mb-0">Size</p>
+<a class="pd-size-guide" href="#">Size guide</a>
+</div>
+<div class="pd-size-list" id="pdSizeList"></div>
+<p class="pd-size-warning" id="sizeWarning">Please select a size.</p>
+</div>
+<!-- Quantity -->
+<div class="pd-option-group">
+<p class="pd-option-label">Quantity</p>
+<div class="pd-qty">
+<button aria-label="Decrease quantity" class="pd-qty-btn" id="qtyMinus" type="button">−</button>
+<input class="pd-qty-value" id="qtyValue" readonly="" type="text" value="1"/>
+<button aria-label="Increase quantity" class="pd-qty-btn" id="qtyPlus" type="button">+</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="pd-actions">
+<button class="btn-add-to-cart" id="addToCartBtn">ADD TO CART</button>
+<button class="btn-wishlist" id="wishlistBtn"><i class="fa-regular fa-heart"></i> ADD TO WISHLIST</button>
+</div>
+<div class="pd-cart-confirm" id="cartConfirm">
+<i class="fa-solid fa-circle-check"></i>
+<span>Added to your cart.</span>
+<a href="cart.html">View Cart</a>
+</div>
+</div>
+</div>
+<!-- Product details -->
+<div class="col-12">
+<div class="pd-tabs">
+<div class="pd-block">
+<h2 class="pd-block-title">Product Details</h2>
+<p id="pdDescription"></p>
+<ul class="pd-list" id="pdDetailsList"></ul>
+</div>
+<div class="pd-accordion">
+<button aria-expanded="false" class="pd-accordion-toggle" id="deliveryToggle">
+<span>Delivery &amp; Return</span>
+<i class="fa-solid fa-plus"></i>
+</button>
+<div class="pd-accordion-panel" id="deliveryPanel">
+<p>Orders are processed within 1–2 business days and delivered in 3–7 business days depending on your location. Free shipping applies to orders over $59.</p>
+<p>Unworn items with tags attached can be returned within 30 days of delivery for a full refund. Return shipping is at the customer's expense unless the item arrived damaged.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="container-page">
+<div class="row g-4">
+<div class="col-6 col-md-3">
+<h5>SHESTYLE</h5>
+<p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+</div>
+<div class="col-6 col-md-3">
+<h5>SHOP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="women.html">Women</a></li>
+<li class="mb-2"><a href="products.html?category=men">Men</a></li>
+<li class="mb-2"><a href="products.html?category=kids">Kids</a></li>
+<li><a href="accessories.html">Accessories</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>HELP</h5>
+<ul class="list-unstyled small">
+<li class="mb-2"><a href="#">Shipping &amp; Returns</a></li>
+<li class="mb-2"><a href="#">Track Order</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-3">
+<h5>NEWSLETTER</h5>
+<p class="small">Sign up for style tips and early access to sales.</p>
+<div class="d-flex gap-2">
+<input class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;" type="email"/>
+<button class="btn btn-sm btn-light">Join</button>
+</div>
+</div>
+</div>
+<div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script>
+<script src="products-data-extra.js"></script>
+<script src="wishlist.js"></script>
+<script src="cart-store.js"></script>
+<script src="legacy-products.js"></script>
+<script src="products-details.js"></script>
+</body>
+</html>

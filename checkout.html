@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — SHESTYLE</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+<div class="announce-bar">Free shipping on orders over $59!</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container-page">
+    <nav class="navbar navbar-expand-lg p-0">
+      <div class="d-flex align-items-center justify-content-between w-100 py-3">
+        <a class="brand-logo" href="index.html">SHESTYLE</a>
+
+        <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse flex-grow-0 d-none d-lg-flex" id="navMenu">
+          <ul class="navbar-nav main-nav gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html?category=men">Men</a></li>
+            <li class="nav-item"><a class="nav-link" href="products.html?category=kids">Kids</a></li>
+            <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+            <li class="nav-item"><a class="nav-link text-rose" href="products.html?category=sale">Sale</a></li>
+          </ul>
+        </div>
+
+        <div class="header-icons d-flex align-items-center">
+          <input type="search" class="search-box d-none d-md-inline-block" placeholder="Search products...">
+          <a href="login.html">Login</a>
+          <a href="wishlist.html"><i class="fa-regular fa-heart"></i></a>
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count">0</span></a>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse d-lg-none" id="navMenu">
+        <ul class="navbar-nav main-nav w-100">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="women.html">Women</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html?category=men">Men</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html?category=kids">Kids</a></li>
+          <li class="nav-item"><a class="nav-link" href="accessories.html">Accessories</a></li>
+          <li class="nav-item"><a class="nav-link text-rose" href="products.html?category=sale">Sale</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Breadcrumb -->
+<div class="page-banner">
+  <div class="container-page">
+    <p class="breadcrumb-min mb-0">
+      <a href="index.html">Home</a> / <a href="cart.html">Cart</a> / <span id="current-page">Checkout</span>
+    </p>
+  </div>
+</div>
+
+<div class="container-page py-4">
+  <h1 class="cart-heading">Checkout</h1>
+
+  <!-- Steps -->
+  <div class="checkout-steps" id="checkoutSteps">
+    <button type="button" class="checkout-step active" data-step="1">
+      <span class="checkout-step-num">1</span>
+      <span class="checkout-step-label">Shipping</span>
+    </button>
+    <span class="checkout-step-sep"><i class="fa-solid fa-chevron-right"></i></span>
+    <button type="button" class="checkout-step" data-step="2">
+      <span class="checkout-step-num">2</span>
+      <span class="checkout-step-label">Payment</span>
+    </button>
+    <span class="checkout-step-sep"><i class="fa-solid fa-chevron-right"></i></span>
+    <button type="button" class="checkout-step" data-step="3">
+      <span class="checkout-step-num">3</span>
+      <span class="checkout-step-label">Review</span>
+    </button>
+  </div>
+
+  <!-- Empty cart notice -->
+  <div class="checkout-card checkout-empty" id="checkoutEmpty" style="display:none;">
+    <i class="fa-solid fa-bag-shopping"></i>
+    <p>Your cart is empty, so there's nothing to check out yet.</p>
+    <a href="women.html" class="btn-checkout" style="display:inline-block;max-width:240px;">CONTINUE SHOPPING</a>
+  </div>
+
+  <div class="row g-5" id="checkoutLayout">
+
+    <div class="col-lg-8">
+      <form id="checkoutForm" novalidate>
+
+        <!-- Step 1: Shipping -->
+        <div class="checkout-card checkout-panel" id="panelShipping">
+          <h2 class="checkout-section-title">Shipping Information</h2>
+          <div class="row g-3">
+            <div class="col-12">
+              <label class="form-label" for="fullName">Full Name</label>
+              <input type="text" class="form-control checkout-input" id="fullName" placeholder="Enter your full name" required>
+              <div class="field-error">Please enter your full name.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" class="form-control checkout-input" id="email" placeholder="Enter your email" required>
+              <div class="field-error">Please enter a valid email address.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="address">Address</label>
+              <input type="text" class="form-control checkout-input" id="address" placeholder="Street address" required>
+              <div class="field-error">Please enter your street address.</div>
+            </div>
+            <div class="col-md-8">
+              <label class="form-label" for="city">City</label>
+              <input type="text" class="form-control checkout-input" id="city" required>
+              <div class="field-error">Please enter your city.</div>
+            </div>
+            <div class="col-md-4">
+              <label class="form-label" for="postalCode">Postal Code</label>
+              <input type="text" class="form-control checkout-input" id="postalCode" required>
+              <div class="field-error">Required.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="phone">Phone</label>
+              <input type="tel" class="form-control checkout-input" id="phone" placeholder="Enter your phone number" required>
+              <div class="field-error">Please enter a valid phone number.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Payment -->
+        <div class="checkout-card checkout-panel" id="panelPayment" style="display:none;">
+          <h2 class="checkout-section-title">Payment Details</h2>
+          <div class="row g-3">
+            <div class="col-12">
+              <label class="form-label" for="cardName">Name on Card</label>
+              <input type="text" class="form-control checkout-input" id="cardName" placeholder="Enter the name on your card" required>
+              <div class="field-error">Please enter the cardholder's name.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label" for="cardNumber">Card Number</label>
+              <input type="text" class="form-control checkout-input" id="cardNumber" placeholder="1234 5678 9012 3456" inputmode="numeric" maxlength="19" required>
+              <div class="field-error">Please enter a valid 16-digit card number.</div>
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="cardExpiry">Expiry (MM/YY)</label>
+              <input type="text" class="form-control checkout-input" id="cardExpiry" placeholder="MM/YY" inputmode="numeric" maxlength="5" required>
+              <div class="field-error">Please enter a valid expiry date.</div>
+            </div>
+            <div class="col-6">
+              <label class="form-label" for="cardCvv">CVV</label>
+              <input type="text" class="form-control checkout-input" id="cardCvv" placeholder="123" inputmode="numeric" maxlength="3" required>
+              <div class="field-error">Please enter a valid 3-digit CVV.</div>
+            </div>
+          </div>
+          <button type="button" class="checkout-back-btn" data-back-to="1">
+            <i class="fa-solid fa-arrow-left"></i> Back to Shipping
+          </button>
+        </div>
+
+        <!-- Step 3: Review -->
+        <div class="checkout-card checkout-panel" id="panelReview" style="display:none;">
+          <h2 class="checkout-section-title">Review Your Order</h2>
+          <div class="review-block">
+            <div class="review-block-head">
+              <h3>Shipping To</h3>
+              <button type="button" class="review-edit" data-back-to="1">Edit</button>
+            </div>
+            <p id="reviewShipping" class="review-text"></p>
+          </div>
+          <div class="review-block">
+            <div class="review-block-head">
+              <h3>Payment Method</h3>
+              <button type="button" class="review-edit" data-back-to="2">Edit</button>
+            </div>
+            <p id="reviewPayment" class="review-text"></p>
+          </div>
+          <div class="review-block">
+            <h3>Items</h3>
+            <div id="reviewItems"></div>
+          </div>
+        </div>
+
+      </form>
+
+      <a href="cart.html" class="continue-shopping">
+        <i class="fa-solid fa-arrow-left"></i> Back to Cart
+      </a>
+    </div>
+
+    <!-- Order summary -->
+    <div class="col-lg-4">
+      <div class="order-summary">
+        <h2 class="order-summary-title">Order Summary</h2>
+        <div id="summaryItems"></div>
+        <div class="order-summary-row">
+          <span>Subtotal</span>
+          <span id="summarySubtotal">$0.00</span>
+        </div>
+        <div class="order-summary-row">
+          <span>Shipping</span>
+          <span id="summaryShipping">$0.00</span>
+        </div>
+        <div class="order-summary-row order-summary-total">
+          <span>Total</span>
+          <span id="summaryTotal">$0.00</span>
+        </div>
+        <button type="submit" form="checkoutForm" class="btn-checkout" id="checkoutPrimaryBtn">CONTINUE TO PAYMENT</button>
+        <div class="payment-accept">
+          <span>WE ACCEPT</span>
+          <div class="payment-icons">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-paypal"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Order confirmation -->
+  <div class="checkout-card checkout-confirmation" id="checkoutConfirmation" style="display:none;">
+    <i class="fa-solid fa-circle-check"></i>
+    <h2>Thank you! Your order is confirmed.</h2>
+    <p>Order number <strong id="confirmOrderNumber"></strong>. A confirmation has been sent to <span id="confirmEmail"></span>.</p>
+    <p class="checkout-confirmation-total">Total charged: <strong id="confirmTotal"></strong></p>
+    <a href="index.html" class="btn-checkout" style="display:inline-block;max-width:240px;">CONTINUE SHOPPING</a>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container-page">
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <h5>SHESTYLE</h5>
+        <p class="small">Everyday fashion, made simple. Curated pieces for women who move fast and dress well.</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>SHOP</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="women.html">Women</a></li>
+          <li class="mb-2"><a href="products.html?category=men">Men</a></li>
+          <li class="mb-2"><a href="products.html?category=kids">Kids</a></li>
+          <li><a href="accessories.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>HELP</h5>
+        <ul class="list-unstyled small">
+          <li class="mb-2"><a href="#">Shipping &amp; Returns</a></li>
+          <li class="mb-2"><a href="#">Track Order</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <h5>NEWSLETTER</h5>
+        <p class="small">Sign up for style tips and early access to sales.</p>
+        <div class="d-flex gap-2">
+          <input type="email" class="form-control form-control-sm" placeholder="Your email" style="background:#2A2624;border-color:#454039;color:#fff;">
+          <button class="btn btn-sm btn-light">Join</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">© 2026 SHESTYLE. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="products-data.js"></script>
+<script src="products-data-extra.js"></script>
+<script src="cart-store.js"></script>
+<script src="checkout.js"></script>
+</body>
+</html>
